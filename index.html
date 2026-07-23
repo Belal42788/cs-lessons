@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دروس Bilal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #f7f8fb;
+            color: #1a1a2e;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: #193cff;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        header p {
+            color: #6b7280;
+            margin-top: 8px;
+        }
+
+        .lessons {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .lesson-card {
+            display: block;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 18px 22px;
+            text-decoration: none;
+            color: #1a1a2e;
+            font-weight: 600;
+            transition: transform .15s, box-shadow .15s, border-color .15s;
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-2px);
+            border-color: #193cff;
+            box-shadow: 0 6px 18px rgba(25, 60, 255, 0.12);
+        }
+
+        .lesson-card .num {
+            color: #193cff;
+            font-weight: 800;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bilal</h1>
+        <p>دروس الـ Computer Science التفاعلية</p>
+    </header>
+    <div class="lessons">
+        <a class="lesson-card" href="Level2-Week17-embedded.html"><span class="num">١</span> الأسبوع السابع عشر: مقدمة
+            في embedded systems</a>
+        <!-- <a class="lesson-card" href="week2.html"><span class="num">٢</span> الأسبوع الثاني: المتغيرات والـ Data
+            Types</a> -->
+        <!-- ضيف سطر جديد هنا لكل درس جديد -->
+    </div>
+</body>
+
+</html>
