@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>دروس Bilal</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -41,7 +42,43 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 16px;
+        }
+
+        details {
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 18px 22px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: .2s;
+            user-select: none;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary:hover {
+            background: #f8f9ff;
+        }
+
+        details[open] summary {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .level-content {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .lesson-card {
@@ -59,7 +96,7 @@
         .lesson-card:hover {
             transform: translateY(-2px);
             border-color: #193cff;
-            box-shadow: 0 6px 18px rgba(25, 60, 255, 0.12);
+            box-shadow: 0 6px 18px rgba(25, 60, 255, .12);
         }
 
         .lesson-card .num {
@@ -71,17 +108,44 @@
 </head>
 
 <body>
+
     <header>
         <h1>Bilal</h1>
         <p>دروس الـ Computer Science التفاعلية</p>
     </header>
+
     <div class="lessons">
-        <a class="lesson-card" href="Level2-Week17-embedded.html"><span class="num">١</span> الأسبوع السابع عشر: مقدمة
-            في embedded systems</a>
-        <!-- <a class="lesson-card" href="week2.html"><span class="num">٢</span> الأسبوع الثاني: المتغيرات والـ Data
-            Types</a> -->
-        <!-- ضيف سطر جديد هنا لكل درس جديد -->
+
+        <!-- المستوى الأول -->
+        <details open>
+            <summary>📘 المستوى الأول</summary>
+
+            <div class="level-content">
+
+                <a class="lesson-card" href="Level2-Week17-embedded.html"><span class="num">١</span> الأسبوع السابع عشر:
+                    مقدمة
+                    في embedded systems</a>
+
+                <!-- أضف هنا باقي دروس المستوى الأول -->
+
+            </div>
+        </details>
+
+        <!-- المستوى الثاني -->
+        <details>
+
+            <summary>📗 المستوى الثاني</summary>
+
+            <div class="level-content">
+
+                <!-- أضف هنا باقي دروس المستوى الثاني -->
+
+            </div>
+
+        </details>
+
     </div>
+
 </body>
 
 </html>
