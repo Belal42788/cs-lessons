@@ -1,0 +1,2245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+            font-family: Cairo, Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="slide-1-recap-introduction-to-security-controls"><strong>🎤
+            Slide 1 — Recap: Introduction to Security Controls</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-controls"><strong>📌 Security Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الأمنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"يا شباب، أول حاجة لازم نفهمها
+            هي يعني إيه</span> <span dir="ltr">Security Controls</span><span dir="rtl">. تخيل إن عندك بيت، هل باب واحد
+            وقفل واحد كفاية يحميه؟ غالبًا
+            لا. هتحتاج باب قوي، كاميرات، إنذار، ويمكن حد يحرس المكان. نفس الفكرة في
+            الأمن السيبراني، الـ</span> <span dir="ltr">Security Controls</span>
+        <span dir="rtl">هي مجموعة وسائل بنستخدمها مع بعض علشان نحمي الشركة من
+            الهجمات الإلكترونية. الهدف منها مش إنها تمنع كل الهجمات، لكن إنها تقلل
+            فرصة الهجوم، ولو حصل تكتشفه بسرعة وتتعامل معاه."</span>
+    </p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"شركة مركبة</span> <span dir="ltr">Firewall</span><span dir="rtl">، وأنتي
+            فيروس، وبتستخدم</span>
+        <span dir="ltr">MFA</span><span dir="rtl">. كل واحدة بتحمي الشركة بطريقة
+            مختلفة."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="cyber-threats"><strong>📌 Cyber Threats</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التهديدات
+            الإلكترونية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"التهديد الإلكتروني هو أي حاجة
+            ممكن تسبب ضرر للنظام أو البيانات، سواء كان هاكر، فيروس، أو حتى موظف
+            ارتكب غلطة. يعني التهديد مش لازم يكون هجوم حصل بالفعل، لكنه حاجة ممكن
+            تسبب مشكلة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"هاكر بيحاول يخمن باسورد حساب
+            موظف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-risks"><strong>📌 Security Risks</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المخاطر الأمنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Risk</span> <span dir="rtl">هو احتمال إن
+            التهديد ينجح ويعمل
+            ضرر. يعني لو عندك ثغرة والهاكر استغلها، هنا الخطر بقى حقيقي. كل ما كانت
+            الحماية ضعيفة، كل ما الـ</span> <span dir="ltr">Risk</span> <span dir="rtl">يزيد."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"شركة مش محدثة أجهزتها،
+            فاحتمال إصابتها بفيروس أعلى."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="layered-protection"><strong>📌 Layered Protection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الحماية متعددة
+            الطبقات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بدل ما نعتمد على وسيلة حماية
+            واحدة، بنستخدم أكتر من طبقة حماية. لو طبقة فشلت، الطبقة اللي بعدها تقدر
+            تمنع الهجوم أو تقلل تأثيره."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"حتى لو الهاكر عرف الباسورد،
+            هيقف عند الـ</span> <span dir="ltr">MFA</span> <span dir="rtl">ومش هيقدر
+            يدخل."</span></p>
+    <p><strong><span dir="ltr">🎤 Slide 2 — Recap: Administrative
+                Controls</span></strong></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="administrative-controls"><strong>📌 Administrative
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الإدارية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"النوع ده من الحماية بيركز على
+            الأشخاص وطريقة الشغل، مش على الأجهزة. يعني بدل ما نركب برنامج، بنحط
+            قوانين وتعليمات وتنظيم يخلي الموظفين يشتغلوا بشكل آمن."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الشركة تمنع أي موظف يشارك
+            الباسورد مع زميله."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="policies"><strong>📌 Policies</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">السياسات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Policy</span> <span dir="rtl">هي القواعد
+            العامة اللي الشركة
+            بتحطها. بتوضح إيه المسموح وإيه الممنوع، وكل الموظفين لازم يلتزموا
+            بيها."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"سياسة بتقول إن كل موظف لازم
+            يستخدم باسورد قوي."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="procedures"><strong>📌 Procedures</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الإجراءات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو الـ</span> <span dir="ltr">Policy</span> <span dir="rtl">قالت لازم
+            نعمل حاجة، فالـ</span>
+        <span dir="ltr">Procedure</span> <span dir="rtl">بتشرح نعملها إزاي خطوة
+            بخطوة."</span>
+    </p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"خطوات تغيير كلمة السر كل 90
+            يوم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="standards"><strong>📌 Standards</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المعايير</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"المعيار بيحدد الحد الأدنى
+            اللي لازم يتطبق. يعني مش اختيار، لكن لازم كل الأقسام تلتزم
+            بيه."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"كل كلمات المرور لازم تكون 12
+            حرف على الأقل."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-awareness-training"><strong>📌 Security Awareness
+            Training</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">تدريب التوعية
+            الأمنية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"حتى لو عندك أفضل برامج حماية،
+            الموظف ممكن يضغط على لينك مزيف ويضيع كل ده. علشان كده الشركات بتدرب
+            الموظفين على التعرف على الهجمات."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"تعليم الموظفين يفرقوا بين
+            الإيميل الحقيقي والإيميل المزيف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-3-recap-technical-controls"><strong>🎤 Slide 3 — Recap:
+            Technical Controls</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="technical-controls"><strong>📌 Technical Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط التقنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الضوابط التقنية هي وسائل
+            حماية معتمدة على التكنولوجيا نفسها. يعني برامج وأجهزة بتشتغل تلقائيًا
+            علشان تمنع أو تكتشف الهجمات."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"برنامج</span> <span dir="ltr">Antivirus</span> <span dir="rtl">على جهازك
+            يعتبر</span> <span dir="ltr">Technical Control</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="firewall"><strong>📌 Firewall</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الجدار الناري</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Firewall</span> <span dir="rtl">زي حارس واقف
+            على باب الشركة.
+            كل البيانات اللي داخلة أو خارجة لازم تعدي عليه، وهو يقرر يسمح لها ولا
+            يمنعها."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"منع جهاز غريب من الوصول
+            لسيرفر الشركة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="antivirus"><strong>📌 Antivirus</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">مضاد الفيروسات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"برنامج بيفحص الملفات والبرامج
+            علشان يكتشف الفيروسات ويحذفها قبل ما تعمل ضرر."</span></p>
+    <p><span dir="rtl">يا شباب، أول حاجة لازم نعرف إن الـ</span> <span dir="ltr"><strong>Antivirus</strong></span> <span
+            dir="rtl">هو أقدم
+            وسيلة حماية موجودة تقريبًا على أي جهاز.</span></p>
+    <p><span dir="rtl">فكروا فيه كأنه <strong>حارس واقف على باب
+                البيت</strong></span><span dir="ltr"></span><span dir="rtl">، أي ملف
+            جديد داخل الجهاز بيبص عليه الأول.</span></p>
+    <p><span dir="rtl">هو بيعمل</span> <span dir="ltr"><strong>Scan</strong></span> <span dir="rtl">للملفات والبرامج،
+            ولو لقى ملف معروف إنه</span> <span dir="ltr">Virus</span> <span dir="rtl">أو</span> <span
+            dir="ltr">Malware</span> <span dir="rtl">بيمنعه أو يحذفه.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">بيعتمد بشكل كبير على حاجة
+            اسمها</span> <span dir="ltr"><strong>Signature Database</strong>.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">Signature</span> <span dir="rtl">دي ممكن تعتبرها زي بصمة أو صورة
+            للمجرمين المعروفين.</span></p>
+    <p><span dir="rtl">كل ما شركة الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">تكتشف</span> <span
+            dir="ltr">Malware</span> <span dir="rtl">جديد، تضيف بصمته في قاعدة
+            البيانات.</span></p>
+    <p><span dir="rtl">بعد كده لما الملف يدخل جهازك، يقارن بصمته بالبصمات
+            الموجودة.</span></p>
+    <p><span dir="rtl">لو لقاها مطابقة يقول:<br />
+            'أيوة ده</span> <span dir="ltr">Malware</span> <span dir="rtl">معروف'
+            ويمنعه فورًا."</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"طيب هل الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">بيمنع
+            أي هجوم؟</span></p>
+    <p><span dir="rtl">الإجابة لأ.</span></p>
+    <p><span dir="rtl">لو المهاجم كتب</span> <span dir="ltr">Malware</span>
+        <span dir="rtl">جديد لسه محدش شافه قبل كده، فالـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">غالبًا
+            مش هيعرفه لأنه
+            معندوش</span> <span dir="ltr">Signature</span> <span dir="rtl">بتاعته.</span>
+    </p>
+    <p><span dir="rtl">كمان لو الملف شكله عادي لكن بيعمل تصرفات غريبة بعد
+            التشغيل، الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">التقليدي ممكن يفوته."</span></p>
+    <p><span dir="rtl">طالب حمل لعبة مكركة.</span></p>
+    <p><span dir="rtl">أثناء التحميل الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">اكتشف إن الملف معروف
+            إنه</span> <span dir="ltr">Trojan</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">منع تشغيله قبل ما يشتغل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="edr-endpoint-detection-and-response"><strong>📌 EDR (Endpoint
+            Detection and Response)</strong> </h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">اكتشاف والاستجابة على
+            الأجهزة
+            الطرفية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">يعتبر نسخة أذكى من
+            الـ</span> <span dir="ltr">Antivirus</span><span dir="rtl">. مش بس بيدور على الفيروسات،
+            لكنه بيراقب سلوك الجهاز باستمرار، ولو لاحظ تصرف غريب يبدأ يتعامل معاه
+            حتى لو الهجوم جديد."</span></p>
+    <p><span dir="rtl">وده هنشرحه بتفصيل اكتر في السلايد الجايه</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="mfa-multi-factor-authentication"><strong>📌 MFA (Multi-Factor
+            Authentication)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المصادقة متعددة
+            العوامل</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بدل ما تعتمد على الباسورد
+            فقط، بيطلب منك إثبات هوية إضافي، زي كود على الموبايل أو
+            بصمة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد كتابة الباسورد يوصلك كود
+            على الهاتف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="siem-security-information-and-event-management"><strong>📌 SIEM
+            (Security Information and Event Management)</strong> </h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">منصة تجمع وتحلل أحداث
+            الأمن
+            السيبراني.</span></p>
+    <p><span dir="rtl">ودي برضه هنشرحها السلايد الجايه علشان نقول الفرق
+            بينها وبين ال</span> <span dir="ltr">edr</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-4-recap-endpoint-detection-response-edr"><strong>🎤 Slide
+            4 — Recap: Endpoint Detection &amp; Response (EDR)</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="endpoint"><strong>📌 Endpoint</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الجهاز الطرفي</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Endpoint</span> <span dir="rtl">هو أي جهاز
+            متصل بشبكة الشركة،
+            زي الكمبيوتر أو اللابتوب أو الموبايل. الأجهزة دي هي أكتر مكان بيبدأ منه
+            الهجوم، علشان كده لازم نراقبها باستمرار."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لابتوب موظف متوصل بشبكة
+            الشركة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="endpoint-detection-response-edr"><strong>📌 Endpoint Detection
+            &amp; Response (EDR)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">نظام كشف والاستجابة
+            للهجمات على أجهزة
+            المستخدم.</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">بيشتغل طول الوقت
+            ويراقب كل اللي
+            بيحصل على الجهاز. لو اكتشف سلوك غريب، زي برنامج بيحاول يغير ملفات كتير
+            أو يتصل بسيرفر مشبوه، يقدر ينبه مسؤول الأمن أو حتى يعزل الجهاز تلقائيًا.
+            عشان كده هو أقوى من الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">التقليدي لأنه بيركز على سلوك
+            الجهاز مش على الفيروسات المعروفة
+            بس."</span></p>
+    <p><span dir="rtl">ناس كتير فاكرة إن</span> <strong><span dir="ltr">EDR</span> <span dir="rtl">هو</span> <span
+                dir="ltr">Antivirus</span> <span dir="rtl">متطور</span></strong><span dir="ltr"></span><span dir="rtl">،
+            لكنه في الحقيقة بيعمل حاجات أكتر
+            بكتير.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">بيدور على فيروس معروف ويشيله.</span>
+    </p>
+    <p><span dir="rtl">لكن الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">بيراقب الجهاز طول الوقت.</span></p>
+    <p><span dir="rtl">يبص:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">البرامج اللي بتشتغل</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">الملفات اللي بتتغير</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">الاتصالات اللي بتخرج للإنترنت</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">أوامر</span> <span dir="ltr">PowerShell</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">محاولات سرقة الـ</span> <span dir="ltr">Passwords</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">ولو لقى سلوك غريب، يقدر يعمل إجراءات
+            بنفسه.</span></p>
+    <p><span dir="rtl">مثلاً:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">يعزل الجهاز عن الشبكة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يوقف البرنامج.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يبلغ فريق الـ</span> <span dir="ltr">SOC</span><span dir="rtl">.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يحتفظ بكل الأدلة علشان التحقيق.</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">يعني الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">مش بس بيكتشف، ده كمان بيرد على
+            الهجوم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="rtl">الموظف فتح ملف</span> <span dir="ltr">PDF</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">الملف شغّل</span> <span dir="ltr">PowerShell</span>
+        <span dir="rtl">وحاول يحمل</span> <span dir="ltr">Malware</span> <span dir="rtl">من الإنترنت.</span>
+    </p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">Antivirus</span> <span dir="rtl">ممكن ميعرفوش لأنه فيروس جديد.</span>
+    </p>
+    <p><span dir="rtl">لكن الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">لاحظ إن</span> <span
+            dir="ltr">Word</span> <span dir="rtl">شغّل</span> <span dir="ltr">PowerShell</span> <span dir="rtl">وبعدها
+            حاول يعمل اتصال خارجي.</span></p>
+    <p><span dir="rtl">قال:</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"ده سلوك مش طبيعي."</span></p>
+    <p><span dir="rtl">فقفل العملية وعزل الجهاز.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="suspicious-activities"><strong>📌 Suspicious
+            Activities</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الأنشطة المشبوهة</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"دي أي تصرفات غير طبيعية بتحصل
+            على الجهاز، وممكن تكون بداية هجوم إلكتروني."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"برنامج بيحاول يفتح ملفات
+            النظام بدون سبب."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="device-isolation"><strong>📌 Device Isolation</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">عزل الجهاز</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">اكتشف إن جهاز
+            اتصاب، ممكن يفصله عن
+            الشبكة مؤقتًا علشان يمنع انتشار الهجوم."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"فصل لابتوب مصاب بفيروس عن
+            باقي أجهزة الشركة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="siem-security-information-and-event-management-1"><strong>📌
+            SIEM (Security Information and Event Management)</strong> </h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">منصة تجمع وتحلل أحداث
+            الأمن
+            السيبراني.</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">بيجمع الـ</span>
+        <span dir="ltr">Logs</span> <span dir="rtl">من كل الأجهزة، ويحللها علشان يكتشف
+            لو فيه نشاط مش طبيعي أو هجوم بيحصل."</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">مختلف تمامًا عن الـ</span> <span
+            dir="ltr">EDR</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">بيشتغل على جهاز واحد.</span></p>
+    <p><span dir="rtl">لكن الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">بيبص على الشركة كلها.</span></p>
+    <p><span dir="rtl">تخيل عندك:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr"></span><span dir="rtl">500 جهاز</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">20 Server</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Firewall</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Router</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Active Directory</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Cloud</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">كل واحد بيطلع</span> <span dir="ltr">Logs</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">لو الـ</span> <span dir="ltr">Security Analyst</span>
+        <span dir="rtl">حاول يقرأهم واحد واحد هيقعد أسبوع.</span>
+    </p>
+    <p><span dir="rtl">هنا ييجي دور الـ</span> <span dir="ltr">SIEM</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">هو بيجمع كل الـ</span> <span dir="ltr">Logs</span>
+        <span dir="rtl">في مكان واحد.</span>
+    </p>
+    <p><span dir="rtl">بعدها يبدأ يحللهم ويعمل</span> <span dir="ltr">Correlation</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يعني يربط الأحداث ببعض.</span></p>
+    <p><span dir="rtl">مثلاً:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">نفس اليوزر دخل من القاهرة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">وبعدها بدقيقتين دخل من ألمانيا.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">وفي نفس الوقت حصل</span> <span dir="ltr">Download</span> <span dir="rtl">ضخم.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">وبعدها الجهاز بدأ يبعت بيانات.</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">كل حدث لوحده ممكن يبقى عادي.</span></p>
+    <p><span dir="rtl">لكن لما الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">يجمعهم مع بعض يعرف إن فيه</span>
+        <span dir="ltr">Attack</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-1"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr">Firewall</span> <span dir="rtl">قال:</span></p>
+    <p><span dir="rtl">فيه اتصال غريب.</span></p>
+    <p><span dir="ltr">Active Directory</span> <span dir="rtl">قال:</span></p>
+    <p><span dir="rtl">فيه</span> <span dir="ltr">Login</span> <span dir="rtl">فاشل 50 مرة.</span></p>
+    <p><span dir="ltr">EDR</span> <span dir="rtl">قال:</span></p>
+    <p><span dir="rtl">فيه</span> <span dir="ltr">PowerShell</span> <span dir="rtl">اشتغل.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">جمع الثلاث أحداث وقال:</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"دي</span> <span dir="ltr">Incident</span> <span dir="rtl">واحدة."</span>
+    </p>
+    <p><span dir="rtl">وبعت</span> <span dir="ltr">Alert</span> <span dir="rtl">لفريق الـ</span> <span
+            dir="ltr">SOC</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="الفرق-بين-edr-وsiem"><strong><span dir="rtl">📌 الفرق بين</span>
+            EDR <span dir="rtl">و</span>SIEM</strong></h2>
+    <table style="width:51%;">
+        <colgroup>
+            <col style="width: 19%" />
+            <col style="width: 30%" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr"><strong>EDR</strong></span></td>
+                <td style="text-align: center;"><span dir="ltr"><strong>SIEM</strong></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="rtl">يحمي</span> <span dir="ltr">Endpoint</span></td>
+                <td style="text-align: center;"><span dir="rtl">يراقب المؤسسة
+                        كلها</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="rtl">يركز على جهاز
+                        واحد</span></td>
+                <td style="text-align: center;"><span dir="rtl">يجمع</span> <span dir="ltr">Logs</span> <span
+                        dir="rtl">من كل الأجهزة</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="rtl">يكتشف سلوك
+                        الجهاز</span></td>
+                <td style="text-align: center;"><span dir="rtl">يربط الأحداث معًا
+                        (</span><span dir="ltr">Correlation</span><span dir="rtl">)</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="rtl">يقدر يعزل
+                        الجهاز</span></td>
+                <td style="text-align: center;"><span dir="rtl">يرسل</span> <span dir="ltr">Alerts</span> <span
+                        dir="rtl">ويساعد في التحقيق</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"يلاحظ إن فيه 500
+            محاولة</span> <span dir="ltr">Login</span> <span dir="rtl">فاشلة في
+            دقيقة واحدة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-5-recap-physical-controls"><strong>🎤 Slide 5 — Recap:
+            Physical Controls</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="physical-controls"><strong>📌 Physical Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط المادية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لحد دلوقتي اتكلمنا عن الحماية
+            بالبرامج والسياسات، لكن فيه نوع تالت اسمه</span> <span dir="ltr">Physical Controls</span><span dir="rtl">.
+            وده بيركز على حماية
+            المكان نفسه والأجهزة الموجودة فيه. لأن لو حد قدر يدخل غرفة السيرفرات
+            مثلًا، ممكن يعمل ضرر حتى لو عندك أقوى برامج حماية."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"شركة بتمنع أي شخص يدخل غرفة
+            السيرفرات إلا لو معاه تصريح."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="physical-assets"><strong>📌 Physical Assets</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الأصول المادية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الأصول المادية هي أي حاجة
+            ملموسة ليها قيمة داخل الشركة، زي الكمبيوترات، السيرفرات، الهاردات،
+            وأجهزة الشبكة. لازم نحميها من السرقة أو التلف أو أي وصول غير مصرح
+            بيه."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"السيرفر الموجود في غرفة
+            الـ</span> <span dir="ltr">IT</span> <span dir="rtl">يعتبر</span> <span dir="ltr">Physical Asset</span><span
+            dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-guards"><strong>📌 Security Guards</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">أفراد الأمن</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"أفراد الأمن بيكونوا أول خط
+            دفاع في المبنى. بيتأكدوا إن الشخص اللي داخل مصرح له، ويمنعوا أي حد غريب
+            من الوصول للمناطق الحساسة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الزائر لازم يسجل بياناته قبل
+            ما يدخل الشركة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="cctv-closed-circuit-television"><strong>📌 CCTV (Closed-Circuit
+            Television)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">كاميرات المراقبة</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الكاميرات مش بتمنع الهجوم
+            بنفسها، لكنها بتسجل كل اللي بيحصل. ولو حصلت مشكلة نقدر نرجع للفيديوهات
+            ونعرف مين عمل إيه وإمتى."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد سرقة جهاز من الشركة، يتم
+            مراجعة تسجيلات الكاميرات."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="locks"><strong>📌 Locks</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الأقفال</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الأقفال وسيلة بسيطة لكنها
+            مهمة جدًا. وظيفتها تمنع أي شخص غير مصرح له من الوصول للأجهزة أو الغرف
+            المهمة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"غرفة السيرفرات بتكون مقفولة
+            بمفتاح أو قفل إلكتروني."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="access-badges"><strong>📌 Access Badges</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">بطاقات الدخول</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بدل ما أي حد يدخل أي مكان، كل
+            موظف بيكون معاه كارت بيفتح له الأماكن المسموح بيها فقط."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"موظف الـ</span> <span dir="ltr">HR</span> <span dir="rtl">يقدر يدخل قسمه
+            فقط، لكن ميقدرش يدخل
+            غرفة السيرفرات."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-recap-control-functions"><strong>🎤 Slide — Recap: Control
+            Functions</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="control-functions"><strong>📌 Control Functions</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">وظائف وسائل
+            الحماية</span></p>
+    <h2 id="speaker-notes"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Control Functions</span> <span
+            dir="rtl">بتجاوب على سؤال
+            واحد:</span></p>
+    <p><strong><span dir="rtl">السيكيورتي كنترول دي بتعمل
+                إيه؟</span></strong></p>
+    <p><span dir="rtl">يعني وظيفتها إيه؟</span></p>
+    <p><span dir="rtl">هل تمنع؟</span></p>
+    <p><span dir="rtl">ولا تكتشف؟</span></p>
+    <p><span dir="rtl">ولا تصلح؟</span></p>
+    <p><span dir="rtl">ولا ترجع النظام يشتغل تاني؟</span></p>
+    <p><span dir="rtl">إذن هنا إحنا بنتكلم عن وظيفة الـ</span> <span dir="ltr">Control</span><span dir="rtl">."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="preventive-control"><strong>1️⃣ Preventive Control</strong></h2>
+    <h3 id="الترجمة"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">وسيلة حماية وقائية</span></p>
+    <h3 id="speaker-notes-1"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Preventive Control</span> <span dir="rtl">هدفه
+            يمنع الهجوم من
+            البداية.</span></p>
+    <p><span dir="rtl">يعني المهاجم يحاول يدخل...<br />
+            الميكانيزم ده يقوله لأ.</span></p>
+    <p><span dir="rtl">كأنه باب عليه قفل.</span></p>
+    <p><span dir="rtl">طالما الباب مقفول، الحرامي مش هيعرف يدخل."</span></p>
+    <h3 id="أمثلة"><strong><span dir="rtl">أمثلة</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr">Firewall</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">MFA</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Strong Password Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Access Control</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Awareness Training</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="مثال"><strong><span dir="rtl">👨‍🎓 مثال</span></strong></h2>
+    <p><span dir="rtl">طالب حاول يدخل بباسورد غلط.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">MFA</span> <span dir="rtl">طلب كود إضافي.</span></p>
+    <p><span dir="rtl">المهاجم وقف.</span></p>
+    <p><span dir="rtl">يبقى ده</span> <span dir="ltr">Preventive</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="detective-control"><strong>2️⃣ Detective Control</strong></h2>
+    <h3 id="الترجمة-1"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">وسيلة اكتشاف</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-2"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Detective</span> <span dir="rtl">مش
+            بيمنع.</span></p>
+    <p><span dir="rtl">هو بيقولك إن في مشكلة حصلت.</span></p>
+    <p><span dir="rtl">زي كاميرات المراقبة.</span></p>
+    <p><span dir="rtl">الكاميرا مش هتمنع السرقة.</span></p>
+    <p><span dir="rtl">بس هتقولك إن السرقة حصلت."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-1"><strong><span dir="rtl">أمثلة</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr">SIEM</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">IDS</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Security Logs</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Monitoring</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Alerts</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="مثال-1"><strong><span dir="rtl">👨‍🎓 مثال</span></strong></h2>
+    <p><span dir="rtl">الهاكر دخل فعلاً.</span></p>
+    <p><span dir="rtl">لكن الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">لاحظ</span> <span
+            dir="ltr">Login</span> <span dir="rtl">غريب.</span></p>
+    <p><span dir="rtl">وبعت</span> <span dir="ltr">Alert</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يبقى</span> <span dir="ltr">Detective</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="corrective-control"><strong>3️⃣ Corrective Control</strong></h2>
+    <h3 id="الترجمة-2"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">وسيلة إصلاح</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-3"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد ما الهجوم
+            يحصل...</span></p>
+    <p><span dir="rtl">لازم نصلح المشكلة.</span></p>
+    <p><span dir="rtl">ده دور الـ</span> <span dir="ltr">Corrective
+            Controls</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يعني نزيل الـ</span> <span dir="ltr">Malware</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">نقفل الـ</span> <span dir="ltr">Vulnerability</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">نرجع الأمور لطبيعتها."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-2"><strong><span dir="rtl">أمثلة</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr">Patch Management</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Malware Removal</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">System Restore</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Reconfiguration</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="مثال-2"><strong><span dir="rtl">👨‍🎓 مثال</span></strong></h2>
+    <p><span dir="rtl">الجهاز اتصاب بـ</span> <span dir="ltr">Malware</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">IT</span> <span dir="rtl">حذف الـ</span> <span
+            dir="ltr">Malware</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">وسطب</span> <span dir="ltr">Patch</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يبقى</span> <span dir="ltr">Corrective</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="recovery-control"><strong>4️⃣ Recovery Control</strong></h2>
+    <h3 id="الترجمة-3"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">وسيلة استعادة</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-4"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"أحيانًا الضرر بيكون
+            كبير.</span></p>
+    <p><span dir="rtl">فلازم نرجع البيانات.</span></p>
+    <p><span dir="rtl">أو نشغل الخدمة مرة تانية.</span></p>
+    <p><span dir="rtl">ده اسمه</span> <span dir="ltr">Recovery</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-3"><strong><span dir="rtl">أمثلة</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr">Backup</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Disaster Recovery</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Business Continuity</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="مثال-3"><strong><span dir="rtl">👨‍🎓 مثال</span></strong></h2>
+    <p><span dir="ltr">Ransomware</span> <span dir="rtl">شفر
+            الملفات.</span></p>
+    <p><span dir="rtl">رجعنا</span> <span dir="ltr">Backup</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">الخدمة اشتغلت.</span></p>
+    <p><span dir="rtl">يبقى</span> <span dir="ltr">Recovery</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="الفرق-بين-control-functions-و-control-types"><strong><span dir="rtl">الفرق بين</span> Control Functions
+            <span dir="rtl">و</span>
+            Control Types</strong></h1>
+    <h2 id="speaker-notes-5"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"الطلبة دايمًا بتتلخبط بين
+            الاتنين.</span></p>
+    <p><span dir="rtl">فافتكروا السؤالين دول.</span></p>
+    <p><span dir="rtl">لو سألتك:</span></p>
+    <p><strong><span dir="rtl">الـ</span> <span dir="ltr">Control</span>
+            <span dir="rtl">دي بتعمل إيه؟</span></strong></p>
+    <p><span dir="rtl">يبقى بتتكلم عن</span> <span dir="ltr"><strong>Function</strong>.</span></p>
+    <p><span dir="rtl">أما لو سألتك:</span></p>
+    <p><strong><span dir="rtl">الـ</span> <span dir="ltr">Control</span>
+            <span dir="rtl">دي عبارة عن إيه؟</span></strong></p>
+    <p><span dir="rtl">يبقى بتتكلم عن</span> <span dir="ltr"><strong>Type</strong>."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="جدول-مقارنة"><strong><span dir="rtl">جدول
+                مقارنة</span></strong></h1>
+    <table style="width:48%;">
+        <colgroup>
+            <col style="width: 23%" />
+            <col style="width: 23%" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr"><strong>Control
+                            Functions</strong></span></td>
+                <td style="text-align: center;"><span dir="ltr"><strong>Control
+                            Types</strong></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="rtl">بتشرح وظيفة الـ</span>
+                    <span dir="ltr">Control</span>
+                </td>
+                <td style="text-align: center;"><span dir="rtl">بتشرح طبيعة الـ</span>
+                    <span dir="ltr">Control</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">What does it
+                        do?</span></td>
+                <td style="text-align: center;"><span dir="ltr">What is it?</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Preventive</span></td>
+                <td style="text-align: center;"><span dir="ltr">Technical</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Detective</span></td>
+                <td style="text-align: center;"><span dir="ltr">Administrative</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Corrective</span></td>
+                <td style="text-align: center;"><span dir="ltr">Physical</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Recovery</span></td>
+                <td style="text-align: center;"><span dir="ltr">—</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><span dir="ltr"></span></p>
+    <h1 id="مثال-يثبت-الفكرة"><strong><span dir="rtl">مثال يثبت
+                الفكرة</span></strong></h1>
+    <h3 id="firewall-1"><strong>Firewall</strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Type:</strong> Technical</span> <span dir="rtl">(لأنه</span> <span
+                    dir="ltr">Software/Hardware</span><span dir="rtl">).</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"><strong>Function:</strong> Preventive</span>
+                <span dir="rtl">(لأنه بيمنع الهجمات قبل ما تدخل).</span>
+            </p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="siem"><strong>SIEM</strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Type:</strong> Technical.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"><strong>Function:</strong> Detective</span> <span dir="rtl">(بيكتشف ويربط الأحداث
+                    ويطلع</span> <span dir="ltr">Alerts</span><span dir="rtl">).</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="security-awareness-training-1"><strong>Security Awareness
+            Training</strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Type:</strong>
+                    Administrative.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"><strong>Function:</strong> Preventive</span>
+                <span dir="rtl">(بيقلل إن الموظف يقع في</span> <span dir="ltr">Phishing</span> <span dir="rtl">أو</span>
+                <span dir="ltr">Social Engineering</span><span dir="rtl">).</span>
+            </p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="backup"><strong>Backup</strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Type:</strong> Technical</span> <span dir="rtl">(في الغالب لأنه نظام أو برنامج
+                    لإدارة النسخ
+                    الاحتياطي).</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"><strong>Function:</strong> Recovery</span> <span dir="rtl">(بيرجع البيانات بعد
+                    الحادث).</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="door-lock"><strong>Door Lock</strong></h3>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Type:</strong> Physical.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"><strong>Function:</strong>
+                    Preventive.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h1 id="أسهل-طريقة-يحفظوها"><strong><span dir="rtl">🎯 أسهل طريقة
+                يحفظوها</span></strong></h1>
+    <p><strong><span dir="ltr">Control Type</span> <span dir="rtl">= إيه هو؟
+                (</span><span dir="ltr">What is it</span><span dir="rtl">?)</span></strong></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Technical</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Administrative</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Physical</span></p>
+        </li>
+    </ul>
+    <p><strong><span dir="ltr">Control Function</span> <span dir="rtl">=
+                بيعمل إيه؟ (</span><span dir="ltr">What does it do</span><span dir="rtl">?)</span></strong></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Preventive</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Detective</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Corrective</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Recovery</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-7-recap-preventive-vs-detective-controls"><strong>🎤 Slide
+            7 — Recap: Preventive vs Detective Controls</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="preventive-controls"><strong>📌 Preventive
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الوقائية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الضوابط الوقائية هدفها تمنع
+            الهجوم من الأساس قبل ما يحصل."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Firewall</span> <span dir="rtl">يمنع الاتصال
+            المشبوه قبل ما
+            يدخل الشبكة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="detective-controls"><strong>📌 Detective Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الكاشفة</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو الهجوم حصل بالفعل، الضوابط
+            الكاشفة بتكتشفه بسرعة وتبلغ مسؤول الأمن."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">يكتشف نشاط غريب
+            ويرسل</span> <span dir="ltr">Alert</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="شرح-الجدول"><strong><span dir="rtl">📌 شرح
+                الجدول</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"بصوا على الجدول:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr"><strong>Firewall</strong></span> <span dir="rtl">و</span> <span
+                    dir="ltr"><strong>MFA</strong></span> <span dir="rtl">و</span> <span
+                    dir="ltr"><strong>Lock</strong></span> <span dir="rtl">و</span> <span dir="ltr"><strong>Awareness
+                        Training</strong></span> <span dir="rtl">كلهم</span> <span dir="ltr">Preventive</span> <span
+                    dir="rtl">لأنهم بيمنعوا المشكلة قبل
+                    حدوثها.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">أما</span> <span dir="ltr"><strong>SIEM</strong></span> <span dir="rtl">و</span> <span
+                    dir="ltr"><strong>Logs</strong></span> <span dir="rtl">و</span> <span
+                    dir="ltr"><strong>CCTV</strong></span> <span dir="rtl">و</span> <span
+                    dir="ltr"><strong>Alerts</strong></span> <span dir="rtl">فهم</span>
+                <span dir="ltr">Detective</span> <span dir="rtl">لأنهم بيكتشفوا المشكلة
+                    بعد ما تبدأ أو أثناء حدوثها."</span>
+            </p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-6-recap-monitoring-and-detection"><strong>🎤 Slide 6 —
+            Recap: Monitoring and Detection</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring-and-detection"><strong>📌 Monitoring and
+            Detection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة والاكتشاف</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد ما نحط وسائل الحماية،
+            لازم نراقب الأنظمة باستمرار. لأن ممكن هجوم ينجح في تجاوز بعض وسائل
+            الحماية، وهنا دور المراقبة إنها تكتشف أي نشاط غريب بسرعة قبل ما
+            يكبر."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"سيستم يلاحظ إن فيه آلاف
+            محاولات تسجيل الدخول في دقيقة واحدة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="logging"><strong>📌 Logging</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">تسجيل الأحداث</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Logs</span> <span dir="rtl">عبارة عن سجل بيسجل
+            كل اللي بيحصل
+            داخل النظام، زي تسجيل الدخول، فتح الملفات، أو تشغيل البرامج. السجل ده
+            بيساعدنا نعرف إيه اللي حصل لو وقع هجوم."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Log</span> <span dir="rtl">يسجل إن مستخدم دخل
+            الساعة 9
+            صباحًا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="alerting"><strong>📌 Alerting</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التنبيهات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بدل ما مسؤول الأمن يراجع
+            الـ</span> <span dir="ltr">Logs</span> <span dir="rtl">بنفسه طول اليوم،
+            النظام يبعتله</span> <span dir="ltr">Alert</span> <span dir="rtl">أول ما
+            يكتشف حاجة مش طبيعية."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"يوصل إشعار إن فيه 50
+            محاولة</span> <span dir="ltr">Login</span> <span dir="rtl">فاشلة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring"><strong>📌 Monitoring</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة المستمرة</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"المراقبة معناها إن النظام
+            بيتابع الأجهزة والشبكة 24 ساعة، ويلاحظ أي تغيير أو نشاط غير
+            معتاد."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"متابعة استهلاك الشبكة بشكل
+            مستمر."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="threat-detection"><strong>📌 Threat Detection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">اكتشاف التهديدات</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"مش أي</span> <span dir="ltr">Alert</span> <span dir="rtl">معناه هجوم.
+            الـ</span> <span dir="ltr">Threat Detection</span> <span dir="rtl">بيحلل البيانات علشان
+            يفرق بين إنذار كاذب، وبين تهديد حقيقي محتاج تدخل."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"التمييز بين موظف نسي
+            الباسورد، وهاكر بيجرب آلاف كلمات المرور."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-9-recap-security-operations-center-soc"><strong>🎤 Slide 9
+            — Recap: Security Operations Center (SOC)</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-operations-center-soc"><strong>📌 Security Operations
+            Center (SOC)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">مركز العمليات
+            الأمنية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد ما عرفنا وسائل الحماية
+            المختلفة، لازم يبقى فيه فريق مسؤول يتابع كل وسائل الحماية دي. الفريق ده
+            اسمه</span> <span dir="ltr"><strong>SOC</strong></span><span dir="rtl">.
+            تقدر تعتبره غرفة التحكم أو غرفة العمليات بتاعة الأمن السيبراني في
+            الشركة. وظيفته إنه يراقب الأنظمة طول الوقت، ويكتشف أي هجوم، ويتصرف بسرعة
+            قبل ما المشكلة تكبر."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"شركة كبيرة زي بنك بيكون عندها
+            فريق</span> <span dir="ltr">SOC</span> <span dir="rtl">شغال 24 ساعة
+            يراقب كل الأجهزة والشبكات."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-events"><strong>📌 Security Events</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الأحداث الأمنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Security Event</span> <span dir="rtl">هو أي
+            حدث له علاقة
+            بالأمن، زي محاولة</span> <span dir="ltr">Login</span><span dir="rtl">،
+            أو تشغيل برنامج، أو تغيير صلاحيات مستخدم. مش كل</span> <span dir="ltr">Event</span> <span dir="rtl">معناه
+            هجوم، لكنه معلومة لازم
+            تتسجل."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"موظف سجل دخول على حسابه
+            يعتبر</span> <span dir="ltr">Security Event</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring-247"><strong>📌 Monitoring (24/7)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة المستمرة
+            24/7</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"فريق الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">بيراقب الأنظمة
+            24 ساعة في اليوم و7
+            أيام في الأسبوع، لأن الهجمات ممكن تحصل في أي وقت، حتى لو الشركة
+            مقفولة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"في الساعة 3 الفجر حصلت محاولة
+            اختراق، والـ</span> <span dir="ltr">SOC</span> <span dir="rtl">استقبل
+            التنبيه فورًا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="suspicious-alerts"><strong>📌 Suspicious Alerts</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التنبيهات المشبوهة</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لما النظام يلاحظ حاجة غير
+            طبيعية، بيبعت</span> <span dir="ltr">Alert</span> <span dir="rtl">لفريق
+            الـ</span> <span dir="ltr">SOC</span><span dir="rtl">. الفريق يبدأ يشوف
+            هل ده هجوم حقيقي ولا مجرد إنذار كاذب."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"وصول</span> <span dir="ltr">Alert</span> <span dir="rtl">بسبب 200
+            محاولة</span> <span dir="ltr">Login</span> <span dir="rtl">فاشلة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="security-incidents"><strong>📌 Security Incidents</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الحوادث الأمنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو اتأكد إن فيه هجوم بالفعل،
+            بنسميه</span> <span dir="ltr">Security Incident</span><span dir="rtl">.
+            هنا فريق الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">يبدأ يعزل
+            الأجهزة المصابة ويوقف الهجوم."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"اكتشاف جهاز اتصاب بـ</span>
+        <span dir="ltr">Ransomware</span><span dir="rtl">."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="siem-1"><strong>📌 SIEM</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">إدارة معلومات وأحداث
+            الأمن</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">بيعتمد بشكل كبير
+            على أدوات
+            زي</span> <span dir="ltr">SIEM</span> <span dir="rtl">لأنها بتجمع
+            الـ</span> <span dir="ltr">Logs</span> <span dir="rtl">من كل الأجهزة،
+            وتحللها، وتبعت تنبيهات لما يحصل نشاط غريب."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">يلاحظ إن مستخدم
+            دخل من مصر وبعدها
+            بدقيقتين من دولة تانية."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="شرح-الصورة"><strong><span dir="rtl">🖼️ شرح
+                الصورة</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"الصورة بتوضح شخص قاعد قدام
+            شاشات كتير بيراقب الشبكة. ده بالضبط شغل فريق الـ</span> <span dir="ltr">SOC</span><span dir="rtl">، إنه
+            يتابع كل الأنظمة في نفس
+            الوقت."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-10-recap-security-operations-center-soc-workflow"><strong>🎤
+            Slide 10 — Recap: Security Operations Center (SOC
+            Workflow)</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitor"><strong>📌 Monitor</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"أول خطوة هي المراقبة
+            المستمرة. الأنظمة بتجمع بيانات وتتابع كل اللي بيحصل."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"متابعة كل محاولات تسجيل
+            الدخول."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="detect"><strong>📌 Detect</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الاكتشاف</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد المراقبة، لو النظام لاحظ
+            حاجة غريبة يبدأ يحدد هل ده تهديد حقيقي."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"اكتشاف عدد كبير جدًا من
+            محاولات</span> <span dir="ltr">Login</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="investigate"><strong>📌 Investigate</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التحقيق</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد اكتشاف المشكلة، يبدأ فريق
+            الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">يجمع الأدلة ويحلل
+            سبب الهجوم، ويعرف الأجهزة أو الحسابات المتأثرة."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"مراجعة الـ</span> <span dir="ltr">Logs</span> <span dir="rtl">لمعرفة أول
+            جهاز اتصاب."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="respond"><strong>📌 Respond</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الاستجابة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد التأكد من الهجوم، يبدأ
+            الفريق يتعامل معاه، زي عزل الجهاز أو إيقاف الحساب أو حذف الملف
+            الضار."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"فصل الجهاز المصاب عن
+            الشبكة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="recover"><strong>📌 Recover</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الاستعادة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"آخر خطوة هي رجوع الأنظمة
+            تشتغل بشكل طبيعي بعد إزالة الهجوم."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"استرجاع الملفات من النسخة
+            الاحتياطية."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-11-recap-defense-in-depth"><strong>🎤 Slide 11 — Recap:
+            Defense in Depth</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="defense-in-depth"><strong>📌 Defense in Depth</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الدفاع متعدد
+            الطبقات</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"من أهم مبادئ الأمن السيبراني
+            إننا معتمدش على وسيلة حماية واحدة. بنحط أكتر من طبقة حماية، بحيث لو طبقة
+            فشلت، الطبقة اللي بعدها تمنع الهجوم أو تقلل تأثيره."</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"يا شباب، تخيلوا إنك بتحمي
+            بيتك.</span></p>
+    <p><span dir="rtl">هل هتعتمد على باب واحد بس؟</span></p>
+    <p><span dir="rtl">أكيد لأ.</span></p>
+    <p><span dir="rtl">هيبقى عندك سور.</span></p>
+    <p><span dir="rtl">وباب.</span></p>
+    <p><span dir="rtl">وقفل.</span></p>
+    <p><span dir="rtl">وكاميرات.</span></p>
+    <p><span dir="rtl">وجرس إنذار.</span></p>
+    <p><span dir="rtl">ويمكن كمان حارس أمن.</span></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">لأنك عارف إن أي وسيلة حماية ممكن تفشل
+            لوحدها.</span></p>
+    <p><span dir="rtl">وده بالظبط هو مفهوم</span> <span dir="ltr"><strong>Defense in Depth</strong>.</span></p>
+    <p><span dir="rtl">بدل ما نعتمد على</span> <span dir="ltr">Security
+            Control</span> <span dir="rtl">واحدة، بنستخدم <strong>أكتر من طبقة
+                حماية</strong></span><span dir="ltr">.</span></p>
+    <p><span dir="rtl">فلو المهاجم قدر يعدي أول طبقة، هيلاقي طبقة تانية،
+            وبعدها تالتة، وهكذا.</span></p>
+    <p><span dir="rtl">الهدف مش إننا نقول الهجوم مستحيل، لكن نخليه أصعب،
+            وأبطأ، وأسهل في الاكتشاف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"حتى لو الهاكر عرف الباسورد،
+            هيقابله</span> <span dir="ltr">MFA</span><span dir="rtl">، ولو دخل
+            هيكتشفه الـ</span> <span dir="ltr">SIEM</span><span dir="rtl">، ولو بدأ
+            يهاجم الجهاز الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">هيعزله."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="rtl">ودي مراحعة سريعة على اللي خدناه</span><span dir="ltr"></span></p>
+    <p><strong><span dir="ltr">Control Type</span> <span dir="rtl">= إيه هو؟
+                (</span><span dir="ltr">What is it</span><span dir="rtl">?)</span></strong></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Technical</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Administrative</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Physical</span></p>
+        </li>
+    </ul>
+    <p><strong><span dir="ltr">Control Function</span> <span dir="rtl">=
+                بيعمل إيه؟ (</span><span dir="ltr">What does it do</span><span dir="rtl">?)</span></strong></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Preventive</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Detective</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Corrective</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Recovery</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="administrative-controls-1"><strong>📌 Administrative
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الإدارية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"دي بتوجه الناس من خلال
+            السياسات والقوانين والتدريب."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"سياسة تمنع مشاركة كلمات
+            المرور."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="technical-controls-1"><strong>📌 Technical
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط التقنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بتحمي الأنظمة باستخدام برامج
+            وأجهزة الحماية."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p>"Firewall <span dir="rtl">أو</span> Antivirus."</p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="physical-controls-1"><strong>📌 Physical Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط المادية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بتحمي المباني والأجهزة من
+            الوصول غير المصرح به."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"كاميرات مراقبة وبطاقات
+            دخول."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring-1"><strong>📌 Monitoring</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"حتى مع وجود كل وسائل الحماية،
+            لازم نتابع الأنظمة باستمرار لاكتشاف أي نشاط غريب."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr">"SIEM</span> <span dir="rtl">يراقب الـ</span> <span dir="ltr">Logs</span><span
+            dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="soc"><strong>📌 SOC</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">مركز العمليات
+            الأمنية</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">هو الفريق اللي
+            بيجمع كل الطبقات دي
+            مع بعض، ويتأكد إنها شغالة، ويتعامل مع أي هجوم."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"فريق الأمن يتابع التنبيهات
+            ويتصرف بسرعة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-12-recap-building-a-strong-cyber-defense"><strong>🎤 Slide
+            12 — Recap: Building a Strong Cyber Defense</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="strong-cyber-defense"><strong>📌 Strong Cyber
+            Defense</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">بناء دفاع سيبراني
+            قوي</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"السلايد دي بتلخص كل اللي
+            اتعلمناه. الأمن السيبراني مش برنامج واحد ولا جهاز واحد، لكنه مجموعة
+            عناصر بتشتغل مع بعض. لو عنصر منهم ناقص، مستوى الحماية هيقل."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"شركة عندها</span> <span dir="ltr">Firewall</span> <span dir="rtl">لكن
+            الموظفين بيضغطوا على أي
+            لينك في الإيميل، كده الشركة لسه معرضة للهجوم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="people"><strong>📌 People</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الأشخاص</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"الموظفين هم أول خط دفاع،
+            ولازم يكون عندهم وعي أمني."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"موظف يكتشف إيميل</span> <span dir="ltr">Phishing</span> <span
+            dir="rtl">قبل ما يفتحه."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="administrative-controls-2"><strong>📌 Administrative
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط الإدارية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بتحدد القوانين والإجراءات
+            اللي الناس تمشي عليها."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"سياسة تغيير كلمة السر كل 90
+            يوم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="technical-controls-2"><strong>📌 Technical
+            Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط التقنية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"برامج وأجهزة تحمي الأنظمة من
+            الهجمات."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p>"Firewall <span dir="rtl">و</span>EDR."</p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="physical-controls-2"><strong>📌 Physical Controls</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الضوابط المادية</span>
+    </p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"تحمي الأجهزة والمباني من
+            الوصول غير المصرح به."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بطاقات دخول
+            وكاميرات."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring-2"><strong>📌 Monitoring</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المراقبة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"مراقبة مستمرة لاكتشاف أي
+            تهديد."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"مراجعة الـ</span> <span dir="ltr">Logs</span> <span
+            dir="rtl">وإرسال</span> <span dir="ltr">Alerts</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="secure-organization"><strong>📌 Secure
+            Organization</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">منظمة آمنة</span></p>
+    <p>🗣️ <strong>Speaker Notes</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لما كل العناصر السابقة تشتغل
+            مع بعض، النتيجة تكون شركة أكثر أمانًا وأقل عرضة للهجمات."</span></p>
+    <p><span dir="ltr">👨‍🎓</span> <strong><span dir="rtl">مثال
+                عملي</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"حتى لو بدأ هجوم، هيتم اكتشافه
+            واحتواؤه بسرعة قبل ما يسبب خسائر كبيرة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-recap-example-phishing-attack"><strong>🎤 Slide — Recap:
+            Example Phishing Attack</strong></h1>
+    <h2 id="speaker-notes-6"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"يا شباب، قبل ما ندخل على
+            الاكتيفيتي خلونا نفتكر إن <strong>الأمن السيبراني مش بيعتمد على وسيلة
+                حماية واحدة</strong></span><span dir="ltr">.</span></p>
+    <p><span dir="rtl">الفكرة إن كل</span> <span dir="ltr">Security
+            Control</span> <span dir="rtl">ليه دور، ولما كلهم يشتغلوا مع بعض، نسبة
+            نجاح الهجوم بتقل جدًا.</span></p>
+    <p><span dir="rtl">السلايد دي بتورينا مثال حقيقي لهجوم</span> <span dir="ltr"><strong>Phishing</strong></span><span
+            dir="rtl">، وإزاي كل
+            طبقة حماية بتتدخل في مرحلة مختلفة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="phishing-email"><strong>📌 Phishing Email</strong></h2>
+    <h3 id="الترجمة-4"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">رسالة تصيد احتيالي</span></p>
+    <h3 id="speaker-notes-7"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"تخيلوا إن موظف في الشركة
+            وصله</span> <span dir="ltr">Email</span> <span dir="rtl">شكله
+            رسمي.</span></p>
+    <p><span dir="rtl">ممكن يكون مكتوب فيه:<br />
+            (</span><span dir="ltr">Your account will expire</span><span dir="rtl">)<br />
+            أو<br />
+            (</span><span dir="ltr">Click here to verify your password</span><span dir="rtl">).</span></p>
+    <p><span dir="rtl">الهدف إن الموظف يصدق الرسالة ويضغط على اللينك أو يفتح
+            الملف.</span></p>
+    <p><span dir="rtl">ومن هنا يبدأ الهجوم."</span></p>
+    <p><span dir="rtl">فايه اول حاجة المفروض نعملها علشان نمنع الهكر انه
+            يدخل السيستم بتاعنا عن طريق حاجة زي ال</span> <span dir="ltr">phishing
+            emails</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="awareness-training"><strong>📌 Awareness Training</strong></h2>
+    <h3 id="الترجمة-5"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">التوعية الأمنية</span></p>
+    <h3 id="speaker-notes-8"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"أول خط دفاع هو الموظف
+            نفسه.</span></p>
+    <p><span dir="rtl">لو الموظف واخد</span> <span dir="ltr">Awareness
+            Training</span> <span dir="rtl">كويس، هيبدأ يلاحظ علامات
+            الخطر.</span></p>
+    <p><span dir="rtl">هيشوف إن عنوان الإيميل غريب.</span></p>
+    <p><span dir="rtl">أو الرابط مختلف.</span></p>
+    <p><span dir="rtl">أو الرسالة فيها استعجال غير طبيعي.</span></p>
+    <p><span dir="rtl">وساعتها هيعرف إنها</span> <span dir="ltr">Scam</span>
+        <span dir="rtl">ومش هيضغط عليها."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-2"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الموظف لاحظ إن الإيميل مكتوب
+            من</span> <span dir="ltr">Gmail</span> <span dir="rtl">بدل</span> <span dir="ltr">Company Domain</span><span
+            dir="rtl">، فمسح
+            الرسالة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="mfa-multi-factor-authentication-1"><strong>📌 MFA (Multi-Factor
+            Authentication)</strong></h2>
+    <h3 id="الترجمة-6"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">المصادقة متعددة العوامل</span></p>
+    <h3 id="speaker-notes-9"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"نفترض إن الموظف غلط
+            وكتب</span> <span dir="ltr">Username</span> <span dir="rtl">و</span><span dir="ltr">Password</span><span
+            dir="rtl">.</span></p>
+    <p><span dir="rtl">هل كده الهجوم نجح؟</span></p>
+    <p><span dir="rtl">مش بالضرورة.</span></p>
+    <p><span dir="rtl">لو الشركة مفعلة</span> <span dir="ltr">MFA</span><span dir="rtl">، فالمهاجم هيحتاج كمان كود موجود
+            على
+            موبايل الموظف.</span></p>
+    <p><span dir="rtl">طالما الكود مع الموظف، المهاجم مش هيقدر يدخل
+            بسهولة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-3"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"المهاجم عرف الباسورد، لكن وقف
+            عند شاشة بتطلب</span> <span dir="ltr">Verification Code</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="edr-endpoint-detection-and-response-1"><strong>📌 EDR (Endpoint
+            Detection and Response)</strong></h2>
+    <h3 id="الترجمة-7"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">اكتشاف والاستجابة على أجهزة المستخدمين</span></p>
+    <h3 id="speaker-notes-10"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"لو المهاجم قدر يشغل ملف خبيث
+            على جهاز الموظف، هنا ييجي دور الـ</span> <span dir="ltr">EDR</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">EDR</span> <span dir="rtl">بيراقب الجهاز طول الوقت.</span></p>
+    <p><span dir="rtl">لو لقى برنامج بيعمل حاجة غريبة، زي إنه بيشغل</span>
+        <span dir="ltr">PowerShell</span> <span dir="rtl">أو بيعدل ملفات النظام
+            أو بينزل</span> <span dir="ltr">Malware</span><span dir="rtl">،
+            يطلع</span> <span dir="ltr">Alert</span> <span dir="rtl">أو يمنع
+            البرنامج."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-4"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الملف حاول ينزل</span> <span dir="ltr">Malware</span><span dir="rtl">،
+            فالـ</span> <span dir="ltr">EDR</span> <span dir="rtl">وقف العملية قبل ما
+            تكمل."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="siem-security-information-and-event-management-2"><strong>📌
+            SIEM (Security Information and Event Management)</strong></h2>
+    <h3 id="الترجمة-8"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">إدارة وتجميع أحداث الأمن السيبراني</span></p>
+    <h3 id="speaker-notes-11"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد كده ييجي دور الـ</span>
+        <span dir="ltr">SIEM</span><span dir="rtl">.</span>
+    </p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">SIEM</span> <span dir="rtl">مش بيحمي الجهاز بنفسه.</span></p>
+    <p><span dir="rtl">هو بيجمع</span> <span dir="ltr">Logs</span> <span dir="rtl">و</span><span dir="ltr">Alerts</span>
+        <span dir="rtl">من كل
+            الأجهزة والسيرفرات في مكان واحد.</span></p>
+    <p><span dir="rtl">لما يحصل أكتر من حدث مشبوه، يربطهم ببعض ويقول لفريق
+            الأمن:<br />
+            في احتمال يكون فيه</span> <span dir="ltr">Attack</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-5"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"جمع</span> <span dir="ltr">Alert</span> <span dir="rtl">من الإيميل،
+            و</span><span dir="ltr">Alert</span> <span dir="rtl">من اللابتوب، و</span><span dir="ltr">Alert</span> <span
+            dir="rtl">من الـ</span> <span dir="ltr">Firewall</span><span dir="rtl">، وقال إن كلهم مرتبطين بنفس
+            المستخدم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="soc-security-operations-center"><strong>📌 SOC (Security
+            Operations Center)</strong></h2>
+    <h3 id="الترجمة-9"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">مركز العمليات الأمنية</span></p>
+    <h3 id="speaker-notes-12"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"آخر خطوة هي فريق الـ</span>
+        <span dir="ltr">SOC</span><span dir="rtl">.</span>
+    </p>
+    <p><span dir="rtl">الفريق ده هو اللي يستلم الـ</span> <span dir="ltr">Alerts</span> <span dir="rtl">ويبدأ
+            يحقق.</span></p>
+    <p><span dir="rtl">يشوف هل ده</span> <span dir="ltr">Attack</span> <span dir="rtl">حقيقي ولا</span> <span
+            dir="ltr">False Alarm</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">ولو فعلاً فيه هجوم، يعزل الجهاز، ويقفل الحساب، ويبدأ
+            عملية الـ</span> <span dir="ltr">Incident Response</span><span dir="rtl">."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-6"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">لقى إن جهاز الموظف
+            مصاب، فعزل
+            الجهاز من الشبكة وغير الباسورد قبل ما الهجوم ينتشر."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-recap-why-monitoring-matters"><strong>🎤 Slide — Recap:
+            Why Monitoring Matters</strong></h1>
+    <h2 id="speaker-notes-13"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي عرفنا أدوات
+            الحماية.</span></p>
+    <p><span dir="rtl">لكن السؤال...</span></p>
+    <p><span dir="rtl">ليه لازم نفضل نراقب الشبكة والأجهزة طول
+            الوقت؟</span></p>
+    <p><span dir="rtl">لأن الهجمات الإلكترونية ممكن تحصل في أي وقت، وممكن
+            تبدأ بحركة صغيرة جدًا.</span></p>
+    <p><span dir="rtl">كل ما نكتشف الهجوم بدري، كل ما الخسائر
+            تقل."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="continuous-monitoring"><strong>📌 Continuous
+            Monitoring</strong></h2>
+    <h3 id="الترجمة-10"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">المراقبة المستمرة</span></p>
+    <h3 id="speaker-notes-14"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"المقصود بـ</span> <span dir="ltr">Continuous Monitoring</span> <span
+            dir="rtl">إننا منسيبش
+            الشبكة من غير متابعة.</span></p>
+    <p><span dir="rtl">الأجهزة، والسيرفرات، والـ</span> <span dir="ltr">Firewalls</span><span dir="rtl">، وكل الأنظمة
+            بتبعت</span>
+        <span dir="ltr">Logs</span> <span dir="rtl">و</span><span dir="ltr">Alerts</span> <span
+            dir="rtl">باستمرار.</span>
+    </p>
+    <p><span dir="rtl">وده يساعد فريق الأمن يعرف لو فيه أي نشاط غريب أول ما
+            يحصل."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-عملي-7"><strong><span dir="rtl">👨‍🎓 مثال
+                عملي</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"لو موظف سجل دخول الساعة 3
+            الفجر من دولة تانية، النظام يطلع</span> <span dir="ltr">Alert</span>
+        <span dir="rtl">فورًا."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="cyber-attacks-can-happen-at-any-time"><strong>📌 Cyber-attacks
+            can happen at any time</strong></h2>
+    <h3 id="الترجمة-11"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">الهجمات ممكن تحصل في أي وقت</span></p>
+    <h3 id="speaker-notes-15"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"المهاجم مش بيستنى ميعاد
+            الشغل.</span></p>
+    <p><span dir="rtl">ممكن الهجوم يحصل بالليل، أو في الإجازات، أو في أي
+            وقت.</span></p>
+    <p><span dir="rtl">عشان كده المراقبة لازم تكون 24/7."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="early-detection-reduces-damage"><strong>📌 Early Detection
+            Reduces Damage</strong></h2>
+    <h3 id="الترجمة-12"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">الاكتشاف المبكر يقلل الخسائر</span></p>
+    <h3 id="speaker-notes-16"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"لو اكتشفنا الهجوم بعد دقيقة
+            غير لما نكتشفه بعد أسبوع.</span></p>
+    <p><span dir="rtl">كل ما نكتشفه أسرع، كل ما نقدر نوقفه قبل ما
+            ينتشر."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="alerts-help-security-teams-react-quickly"><strong>📌 Alerts Help
+            Security Teams React Quickly</strong></h2>
+    <h3 id="الترجمة-13"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">التنبيهات تساعد فريق الأمن يستجيب بسرعة</span></p>
+    <h3 id="speaker-notes-17"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الـ</span> <span dir="ltr">Alerts</span> <span dir="rtl">زي جرس
+            الإنذار.</span></p>
+    <p><span dir="rtl">أول ما يحصل نشاط غريب، النظام يبلغ فريق الأمن علشان
+            يبدأ التحقيق."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="monitoring-improves-overall-security"><strong>📌 Monitoring
+            Improves Overall Security</strong></h2>
+    <h3 id="الترجمة-14"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">المراقبة تحسن مستوى الأمان</span></p>
+    <h3 id="speaker-notes-18"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"لما نراقب باستمرار، هنكتشف
+            الثغرات والأخطاء بسرعة، وبالتالي مستوى الأمان يزيد."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="business-continuity"><strong>📌 Business
+            Continuity</strong></h2>
+    <h3 id="الترجمة-15"><strong><span dir="rtl">الترجمة</span></strong></h3>
+    <p><span dir="rtl">استمرارية العمل</span></p>
+    <h3 id="speaker-notes-19"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الهدف النهائي إن الشركة تفضل
+            شغالة حتى لو حصل هجوم.</span></p>
+    <p><span dir="rtl">كل ما نكتشف المشكلة بدري، كل ما نرجع الشغل الطبيعي
+            بسرعة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-recap-security-analyst"><strong>🎤 Slide — Recap: Security
+            Analyst</strong></h1>
+    <h2 id="speaker-notes-20"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد ما عرفنا أدوات الحماية،
+            خلونا نتكلم عن الشخص اللي بيستخدم الأدوات دي.</span></p>
+    <p><span dir="rtl">وده هو الـ</span> <span dir="ltr">Security
+            Analyst</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">شغله الأساسي إنه يراقب، ويحلل، ويستجيب لأي
+            تهديد."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="monitor-security-alerts"><strong>📌 Monitor Security
+            Alerts</strong></h3>
+    <p><span dir="rtl">يراقب كل الـ</span> <span dir="ltr">Alerts</span>
+        <span dir="rtl">اللي بتطلع من الأنظمة.</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="investigate-suspicious-activities"><strong>📌 Investigate
+            Suspicious Activities</strong></h3>
+    <p><span dir="rtl">يحقق في أي نشاط شكله غريب.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="analyze-potential-threats"><strong>📌 Analyze Potential
+            Threats</strong></h3>
+    <p><span dir="rtl">يحلل إذا كان النشاط</span> <span dir="ltr">Threat</span> <span dir="rtl">حقيقي ولا مجرد</span>
+        <span dir="ltr">False Positive</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="respond-to-security-incidents"><strong>📌 Respond to Security
+            Incidents</strong></h3>
+    <p><span dir="rtl">لو اتأكد إن فيه</span> <span dir="ltr">Attack</span><span dir="rtl">، يبدأ الـ</span> <span
+            dir="ltr">Incident Response</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="protect-organizational-assets"><strong>📌 Protect Organizational
+            Assets</strong></h3>
+    <p><span dir="rtl">الهدف النهائي إنه يحافظ على بيانات الشركة وأجهزتها
+            وخدماتها.</span></p>
+    <p><span dir="rtl">طبيعة شغله اليومية."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-group-activity-1-build-your-cyber-defense"><strong>🎤
+            Slide — Group Activity 1: Build Your Cyber Defense</strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-21"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي جه دوركم.</span></p>
+    <p><span dir="rtl">إنتوا بقيتوا فريق الـ</span> <span dir="ltr">Security
+            Team</span> <span dir="rtl">لشركة ناشئة.</span></p>
+    <p><span dir="rtl">المطلوب من كل</span> <span dir="ltr">Group</span>
+        <span dir="rtl">إنه يبني خطة حماية مناسبة للشركة."</span>
+    </p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="scenario"><strong>📌 Scenario</strong></h2>
+    <h3 id="speaker-notes-22"><strong>🗣️ Speaker Notes</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الشركة دي فيها:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr"></span><span dir="rtl">30 موظف.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">مكتب واحد.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Cloud Email.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Company Laptops.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Customer Database.</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Wi-Fi Network.</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">يعني شركة صغيرة، لكن عندها بيانات مهمة لازم
+            تتحمي.</span></p>
+    <p><span dir="rtl">مش مطلوب نجيب أغلى حلول في السوق.</span></p>
+    <p><span dir="rtl">المطلوب نختار</span> <strong><span dir="ltr">Security
+                Controls</span> <span dir="rtl">مناسبة</span></strong><span dir="ltr"></span> <span dir="rtl">لحجم
+            الشركة واحتياجاتها."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المطلوب-من-الطلبة"><strong><span dir="rtl">👨‍🎓 المطلوب من
+                الطلبة</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"كل</span> <span dir="ltr">Group</span> <span dir="rtl">يناقش:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">إيه أهم</span> <span dir="ltr">Controls</span>
+                <span dir="rtl">هيضيفها؟</span>
+            </p>
+        </li>
+        <li>
+            <p><span dir="rtl">وليه اختارها؟</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">وإزاي كل</span> <span dir="ltr">Control</span>
+                <span dir="rtl">هيحمي جزء من الشركة؟</span>
+            </p>
+        </li>
+    </ul>
+    <p><span dir="rtl">في الآخر كل فريق يعرض تصميمه، ونقارن بين الحلول
+            المختلفة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><strong><span dir="rtl">إيه أهم</span> <span dir="ltr">Security
+                Controls</span> <span dir="rtl">نحطها عشان نقلل المخاطر لأكبر
+                درجة؟</span></strong></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="مراجعة-سريعة-قبل-ما-يحلوا"><strong><span dir="rtl">مراجعة سريعة
+                قبل ما يحلوا</span></strong></h2>
+    <p><span dir="rtl">قبل ما تبدأوا افتكروا إننا اتكلمنا عن 3 أنواع من
+            الـ</span> <span dir="ltr">Security Controls</span><span dir="rtl">.</span></p>
+    <p><img src="assets/media/image2.png" style="width:6.26772in;height:9.40278in" /><span dir="ltr"></span></p>
+    <p><img src="assets/media/image3.png" style="width:6.26772in;height:9.40278in" /><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="administrative-controls-3"><strong>1) Administrative
+            Controls</strong></h3>
+    <p><span dir="rtl">دي</span> <span dir="ltr">Controls</span> <span dir="rtl">بتغير <strong>سلوك
+                الناس</strong></span><span dir="ltr">.</span></p>
+    <p><span dir="rtl">يعني</span> <span dir="ltr">Policies + Procedures +
+            Training</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">أمثلة:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Security Awareness Training</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Password Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Acceptable Use Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Incident Response Plan</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="technical-controls-3"><strong>2) Technical
+            Controls</strong></h3>
+    <p><span dir="rtl">دي</span> <span dir="ltr">Software</span> <span dir="rtl">أو</span> <span
+            dir="ltr">Hardware</span> <span dir="rtl">بيحمي السيستم.</span></p>
+    <p><span dir="rtl">زي:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">MFA</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Firewall</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Antivirus</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">EDR</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="physical-controls-3"><strong>3) Physical Controls</strong></h3>
+    <p><span dir="rtl">دي بتحمي المكان نفسه.</span></p>
+    <p><span dir="rtl">زي:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Door Locks</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Access Cards</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">CCTV</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Security Guards</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المطلوب-منهم"><strong><span dir="rtl">المطلوب
+                منهم</span></strong></h2>
+    <p><span dir="rtl">كل</span> <span dir="ltr">Group</span> <span dir="rtl">تختار على الأقل:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Administrative Control</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Technical Control</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">Physical Control</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">وبعدين تشرح:</span></p>
+    <p><strong><span dir="rtl">ليه اخترناه؟</span></strong></p>
+    <p><span dir="rtl">وفي الآخر تجاوب:</span></p>
+    <blockquote>
+        <p><span dir="ltr">Which control gives the biggest reduction in
+                risk?</span></p>
+    </blockquote>
+    <p><span dir="ltr"></span></p>
+    <h2 id="شرح-الحل-model-solution"><strong><span dir="rtl">شرح الحل
+                (</span>Model Solution<span dir="rtl">)</span></strong></h2>
+    <h3 id="administrative-control"><strong>Administrative
+            Control</strong></h3>
+    <p><span dir="rtl">أفضل إجابة:</span></p>
+    <p><strong><span dir="ltr">Security Awareness
+                Training</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">لأن أغلب الهجمات أصلاً بتبدأ بإنسان.</span></p>
+    <p><span dir="rtl">لو الموظف عرف يكتشف</span> <span dir="ltr">Phishing
+            Email</span> <span dir="rtl">من البداية، الهجوم كله هيقف.</span></p>
+    <p><span dir="rtl">يعني بدل ما تعالج المشكلة بعد ما تحصل...</span></p>
+    <p><span dir="rtl">إنت منعتها من الأساس.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="technical-control"><strong>Technical Control</strong></h3>
+    <p><span dir="rtl">أفضل إجابة:</span></p>
+    <p><strong><span dir="ltr">Multi-Factor Authentication
+                (MFA)</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">لو الباسورد اتسرق...</span></p>
+    <p><span dir="rtl">المهاجم لسه محتاج العامل التاني.</span></p>
+    <p><span dir="rtl">يعني مجرد سرقة</span> <span dir="ltr">Password</span>
+        <span dir="rtl">مش كفاية.</span>
+    </p>
+    <p><span dir="rtl">وده بيقلل فرص اختراق الحسابات جدًا.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="physical-control"><strong>Physical Control</strong></h3>
+    <p><span dir="rtl">أفضل إجابة:</span></p>
+    <p><strong><span dir="ltr">Access Badges</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">عشان أي شخص غريب ميعرفش يدخل الشركة أو يوصل للسيرفرات
+            أو اللابتوبات.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="السؤال-الأخير"><strong><span dir="rtl">السؤال
+                الأخير</span></strong></h2>
+    <blockquote>
+        <p><span dir="ltr">Which control gives the biggest reduction in
+                risk?</span></p>
+    </blockquote>
+    <p><span dir="rtl">الإجابة الصح:</span></p>
+    <p><strong><span dir="rtl">مفيش إجابة واحدة.</span></strong></p>
+    <p><span dir="rtl">كل</span> <span dir="ltr">Control</span> <span dir="rtl">بيحمي جزء مختلف.</span></p>
+    <p><span dir="rtl">لكن لو هنبص على شركات صغيرة...</span></p>
+    <p><span dir="rtl">غالبًا</span> <span dir="ltr">Security Awareness
+            Training</span> <span dir="rtl">هيحقق أكبر تأثير لأنه بيمنع أغلب الهجمات
+            من البداية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="activity-2-cyber-defense-challenge"><strong>Activity 2: Cyber
+            Defense Challenge</strong></h1>
+    <h2 id="شرح-السيناريو"><strong><span dir="rtl">شرح
+                السيناريو</span></strong></h2>
+    <p><span dir="rtl">دلوقتي الشركة اتعرضت لهجوم بالفعل.</span></p>
+    <p><span dir="rtl">وإحنا هنشوف كل خطوة المهاجم عملها.</span></p>
+    <p><span dir="rtl">والمطلوب:</span></p>
+    <p><strong><span dir="rtl">لكل خطوة نقول أفضل</span> <span dir="ltr">Security Control</span> <span dir="rtl">كان
+                ممكن يوقفها أو
+                يقلل ضررها.</span></strong></p>
+    <p><span dir="rtl">يعني مش بنحدد نوع الهجوم...</span></p>
+    <p><span dir="rtl">إحنا بنحدد أفضل وسيلة دفاع.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><img src="assets/media/image1.png" style="width:6.26772in;height:8.38889in" /><span dir="ltr"></span></p>
+    <h2 id="مراجعة-سريعة-قبل-الحل"><strong><span dir="rtl">مراجعة سريعة قبل
+                الحل</span></strong></h2>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="rtl">افتكروا الـ</span> <span dir="ltr">Controls</span>
+        <span dir="rtl">اللي خدناها:</span>
+    </p>
+    <ul>
+        <li>
+            <p><span dir="ltr">Security Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── 1. Control Types (What is
+                    it?)</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Technical Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Firewall</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Antivirus</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── EDR</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── SIEM</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── IDS</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── IPS</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── MFA</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── VPN</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Encryption</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ └── Backup</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Administrative Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Security Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Password Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Security Awareness
+                    Training</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Incident Response Plan</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ └── Acceptable Use Policy
+                    (AUP)</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ └── Physical Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Security Guards</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── CCTV</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Locks</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Access Cards</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Biometric Scanner</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ └── Fence</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── 2. Control Functions (What does it
+                    do?)</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Preventive Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Firewall</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── MFA</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Password Policy</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Security Awareness
+                    Training</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Access Control</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ └── Encryption</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Detective Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Antivirus</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── EDR</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── SIEM</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── IDS</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Monitoring</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Logs</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ └── Alerts</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Corrective Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── EDR Response</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Malware Removal</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Patch Management</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ ├── Reconfiguration</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │ └── System Restore</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ └── Recovery Controls</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Backup</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Disaster Recovery</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ └── Business Continuity</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── 3. Security Operations</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ │</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Monitoring</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Logs</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Alerts</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── Security Analyst</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ ├── SOC</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│ └── Incident Response</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">└── 4. Defense in Depth</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">│</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── People</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── Physical Security</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── Network Security</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── Endpoint Security</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">├── Application Security</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">└── Data Security</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr"></span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">كل واحدة ليها وظيفة مختلفة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="شرح-الحل"><strong><span dir="rtl">شرح الحل</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-الأولى"><strong><span dir="rtl">المرحلة
+                الأولى</span></strong></h2>
+    <p><span dir="ltr">Employee clicks a phishing email.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">Security Awareness
+                Training</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">لأن الموظف لو اتدرب كويس كان هيعرف إن الإيميل مزيف
+            ومش هيضغط عليه.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-الثانية"><strong><span dir="rtl">المرحلة
+                الثانية</span></strong></h2>
+    <p><span dir="ltr">Credentials are stolen.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">MFA</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">حتى لو الباسورد اتسرق...</span></p>
+    <p><span dir="rtl">المهاجم لسه محتاج العامل التاني.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-الثالثة"><strong><span dir="rtl">المرحلة
+                الثالثة</span></strong></h2>
+    <p><span dir="ltr">Malware is downloaded.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">Antivirus</span> <span dir="rtl">أو</span>
+            <span dir="ltr">EDR</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">هيكتشف الملف الضار.</span></p>
+    <p><span dir="rtl">أو يعمله</span> <span dir="ltr">Block</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">أو يعزله قبل ما يشتغل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-الرابعة"><strong><span dir="rtl">المرحلة
+                الرابعة</span></strong></h2>
+    <p><span dir="ltr">Attacker accesses the server.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">Firewall</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">Firewall</span> <span dir="rtl">بيمنع أو يفلتر الاتصالات غير المصرح
+            بيها.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-الخامسة"><strong><span dir="rtl">المرحلة
+                الخامسة</span></strong></h2>
+    <p><span dir="ltr">Customer data is stolen.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">SIEM + Continuous
+                Monitoring</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">هيلاحظ نشاط غير طبيعي.</span></p>
+    <p><span dir="rtl">ويطلع</span> <span dir="ltr">Alert</span> <span dir="rtl">بسرعة.</span></p>
+    <p><span dir="rtl">وده يساعد الفريق يتدخل قبل ما كل البيانات
+            تتسرق.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المرحلة-السادسة"><strong><span dir="rtl">المرحلة
+                السادسة</span></strong></h2>
+    <p><span dir="ltr">Security incident occurs.</span></p>
+    <p><span dir="rtl">أفضل</span> <span dir="ltr">Control</span><span dir="rtl">:</span></p>
+    <p><strong><span dir="ltr">SOC</span></strong></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">SOC</span> <span dir="rtl">هو الفريق المسؤول عن:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">التحقيق.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">احتواء الهجوم.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">الاستجابة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">استرجاع الخدمة.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h1 id="مناقشة-الأسئلة-الأخيرة"><strong><span dir="rtl">مناقشة الأسئلة
+                الأخيرة</span></strong></h1>
+    <h3 id="could-one-control-stop-the-entire-attack"><strong>Could one
+            control stop the entire attack?</strong></h3>
+    <p><span dir="rtl">الإجابة:</span></p>
+    <p><strong><span dir="rtl">لا.</span></strong></p>
+    <p><span dir="rtl">كل</span> <span dir="ltr">Control</span> <span dir="rtl">بيحمي مرحلة مختلفة.</span></p>
+    <p><span dir="rtl">علشان كده بنستخدم</span> <span dir="ltr"><strong>Defense in Depth</strong>.</span></p>
+    <p><span dir="rtl">يعني</span> <span dir="ltr">Layers</span> <span dir="rtl">متعددة من الحماية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="why-is-mfa-important-if-a-password-is-stolen"><strong>Why is MFA
+            important if a password is stolen?</strong></h3>
+    <p><span dir="rtl">لأن</span> <span dir="ltr">Password</span> <span dir="rtl">لوحده مش كفاية.</span></p>
+    <p><span dir="rtl">المهاجم محتاج العامل التاني.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="which-control-helps-before-the-attack-starts"><strong>Which
+            control helps before the attack starts?</strong></h3>
+    <p><strong><span dir="ltr">Security Awareness
+                Training</span></strong></p>
+    <p><span dir="rtl">لأنه بيمنع الغلطة البشرية من البداية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="which-control-helps-after-an-attack-is-detected"><strong>Which
+            control helps after an attack is detected?</strong></h3>
+    <p><span dir="rtl">ممكن تكون:</span></p>
+    <ul>
+        <li>
+            <p><span dir="ltr">SOC</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">SIEM</span></p>
+        </li>
+        <li>
+            <p><span dir="ltr">EDR</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">حسب المرحلة اللي وصلها الهجوم.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="ملخص-تربطه-بالدرس"><strong><span dir="rtl">ملخص تربطه
+                بالدرس</span></strong></h2>
+    <p><span dir="rtl">قول للطلبة في النهاية:</span></p>
+    <blockquote>
+        <p><span dir="ltr"></span><span dir="rtl">"لاحظوا إن الهجوم الحقيقي
+                مبيتوقفش بسبب</span> <span dir="ltr">Tool</span> <span dir="rtl">واحدة.
+                كل مرحلة ليها وسيلة دفاع مختلفة. عشان كده الشركات الكبيرة
+                مبتشتريش</span> <span dir="ltr">Antivirus</span> <span dir="rtl">وخلاص،
+                لكنها بتبني</span> <span dir="ltr">Layers</span> <span dir="rtl">من
+                الحماية:</span> <span dir="ltr">Training + MFA + Firewall + EDR + SIEM +
+                SOC</span><span dir="rtl">. وده اسمه</span> <span dir="ltr"><strong>Defense in
+                    Depth</strong></span><span dir="rtl">، وهو
+                أهم فكرة في الدرس كله."</span></p>
+    </blockquote>
+    <p><span dir="ltr"></span></p>
+
+</body>
+
+</html>

@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <style>
+        body {
+            direction: rtl;
+            text-align: right;
+            font-family: Cairo, Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="section"><img src="assets/media/image2.png" style="width:6.26772in;height:3.52778in" /></h1>
+    <h1 id="httpschatgpt.comsm_6a5e823a1ca88191b8e83ace7be755c8"><a
+            href="https://chatgpt.com/s/m_6a5e823a1ca88191b8e83ace7be755c8"><strong><u>https://chatgpt.com/s/m_6a5e823a1ca88191b8e83ace7be755c8</u></strong></a>
+    </h1>
+    <h1 id="slide-1-the-big-picture-what-makes-a-circuit-work"><strong><br />
+            ⚡ Slide 1: The Big Picture: What Makes a Circuit Work</strong></h1>
+    <h2 id="httpschatgpt.comsm_6a5e8298e14c81919fa92d554aa25d10"><a
+            href="https://chatgpt.com/s/m_6a5e8298e14c81919fa92d554aa25d10"><strong><u>https://chatgpt.com/s/m_6a5e8298e14c81919fa92d554aa25d10</u></strong></a>
+    </h2>
+    <h2 id="speaker-notes"><img src="assets/media/image5.png" style="width:6.26772in;height:3.52778in" /><strong><br />
+            🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"🚀 قبل ما نبدأ السلايد دي،
+            عايز أسألكم سؤال...</span></p>
+    <p><span dir="rtl">لو جبت عربية ريموت كنترول، أو روبوت صغير، أو حتى
+            مروحة كهربائية... إيه الحاجة المشتركة بينهم كلهم؟</span></p>
+    <p><span dir="rtl">كلهم بيحتاجوا كهربا علشان يشتغلوا.</span></p>
+    <p><span dir="rtl">طيب إحنا داخلين</span> <span dir="ltr">Embedded
+            Systems</span><span dir="rtl">... ليه بنتعلم كهربا الأول؟</span></p>
+    <p><span dir="rtl">لأن الـ</span> <span dir="ltr">Embedded System</span>
+        <span dir="rtl">في الآخر هو جهاز ذكي، لكن الجهاز ده بيحتوي على
+            إلكترونيات وكهربا وسنسورات وبرمجة.</span>
+    </p>
+    <p><span dir="rtl">يعني المبرمج في المجال ده مش بيكتب كود وبس، ده الكود
+            بتاعه بيتعامل مع كهربا حقيقية.</span></p>
+    <p><span dir="rtl">ولو مش فاهم الكهربا ماشية إزاي، مش هتعرف ليه
+            الـ</span> <span dir="ltr">LED</span> <span dir="rtl">نورت، أو الموتور
+            وقف، أو السنسور قرأ قيمة غلط.</span></p>
+    <p><span dir="rtl">عشان كده النهارده هنفهم أهم خمس كلمات في الكهربا، ولو
+            فهمناهم هنفهم أي دائرة كهربائية بعد كده."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-التقنية"><strong><span dir="rtl">📘 المصطلحات
+                التقنية</span></strong></h2>
+    <h3 id="charge"><strong>🔋 Charge</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الشحنة الكهربائية</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">تخيل إن عندك مجموعة كور صغيرة جدًا بتتحرك داخل
+            أنبوبة.</span></p>
+    <p><span dir="rtl">كل كورة تعتبر جزء صغير من اللي بنسميه شحنة
+            كهربائية.</span></p>
+    <p><span dir="rtl">كل الكهرباء اللي حوالينا عبارة عن شحنات صغيرة جدًا
+            بتتحرك داخل الأسلاك.</span></p>
+    <p><span dir="rtl">كل ما عدد الشحنات يزيد، يبقى كمية الكهرباء
+            أكبر.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل إن معاك عربية ألعاب فيها 100 كرة صغيرة، وكل مرة
+            بتنقل الكرات من صندوق للتاني. الكرات دي هي الشحنات اللي
+            بتتحرك.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">لما البطارية تشغل روبوت صغير، ملايين ومليارات الشحنات
+            الكهربائية بتتحرك داخل الأسلاك علشان توصل الطاقة لكل جزء في
+            الروبوت.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">طيب الشحنات دي بتتحرك إزاي؟ هنا ييجي مفهوم
+            التيار.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="current"><strong>⚡ Current</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التيار الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">التيار هو عدد الشحنات اللي بتعدي في السلك كل
+            ثانية.</span></p>
+    <p><span dir="rtl">يعني مش بنقيس كمية الشحنات كلها، لكن بنقيس سرعة
+            مرورها.</span></p>
+    <p><span dir="rtl">كل ما التيار يزيد، كمية الكهرباء اللي ماشية في السلك
+            كل ثانية تزيد.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل باب المدرسة. لو كل ثانية دخل 5 طلبة يبقى الحركة
+            بطيئة، لكن لو دخل 100 طالب في الثانية يبقى في تيار كبير من
+            الطلبة.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">لو الموتور في عربية روبوت محتاج تيار أكبر، البطارية
+            لازم تبعت عدد أكبر من الشحنات كل ثانية علشان الموتور يلف.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">لكن إيه اللي بيخلي الشحنات تتحرك أصلاً؟</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="voltage"><strong>🔋 Voltage</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الجهد الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الجهد هو القوة أو الدفع اللي بيزق الشحنات
+            تتحرك.</span></p>
+    <p><span dir="rtl">من غير جهد، الشحنات هتفضل واقفة مكانها.</span></p>
+    <p><span dir="rtl">عشان كده البطارية وظيفتها الأساسية إنها تعمل فرق جهد
+            يخلي الكهرباء تتحرك.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل إنك واقف على زحليقة. لو الزحليقة عالية جدًا،
+            هتنزل بسرعة بسبب قوة الدفع. كل ما الارتفاع يزيد، الدفع يزيد.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">بطارية 9</span><span dir="ltr">V</span> <span dir="rtl">بتدي دفع أكبر من بطارية 1.5</span><span
+            dir="ltr">V</span><span dir="rtl">، علشان كده بعض الأجهزة تحتاج بطاريات
+            بجهد أعلى.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما عرفنا الدفع، محتاجين نعرف الطاقة اللي بتوصل
+            للجهاز.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="power"><strong>💡 Power</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">القدرة الكهربائية</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">القدرة معناها الجهاز بيستهلك أو يستقبل طاقة قد إيه كل
+            ثانية.</span></p>
+    <p><span dir="rtl">يعني مش مجرد الكهرباء ماشية، لكن قد إيه طاقة وصلت
+            فعلاً.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لمبة صغيرة ولمبة كبيرة الاتنين بينوروا، لكن الكبيرة
+            بتستهلك طاقة أكتر فبتبقى أقوى في الإضاءة.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">موتور روبوت صغير يستهلك قدرة أقل من موتور درون كبير،
+            لأن الدرون محتاج طاقة أكبر علشان يطير.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">لكن كل ده مش هيحصل لو الدائرة مش مقفولة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="closed-loop"><strong>🔄 Closed Loop</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الدائرة المغلقة</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الكهربا لازم يكون ليها طريق كامل تخرج من البطارية
+            وترجع لها تاني.</span></p>
+    <p><span dir="rtl">لو السلك اتقطع، الكهرباء هتقف فورًا.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل سباق جري في مضمار دائري. لو المضمار اتقطع في
+            حتة، العدائين هيقفوا ومش هيعرفوا يكملوا.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">لما تفتح مفتاح الروبوت، الدائرة تكتمل فيشتغل. ولما
+            تطفيه، الدائرة تتفتح فيقف فورًا.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="تفاعل-سريع"><strong><span dir="rtl">🎯 تفاعل
+                سريع</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو البطارية موجودة لكن في سلك
+            مقطوع... هل اللمبة هتنور؟ وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-2-the-water-tank-analogy"><strong>🚰 Slide 2: The
+            Water-Tank Analogy</strong></h1>
+    <p><a
+            href="https://chatgpt.com/s/m_6a5e82bd345c8191b927653920108646"><u>https://chatgpt.com/s/m_6a5e82bd345c8191b927653920108646</u></a>
+    </p>
+    <p><img src="assets/media/image9.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="speaker-notes-1"><strong>🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"💧 الكهربا مش بنشوفها بعيننا،
+            فالعلماء استخدموا مثال بسيط جدًا يساعدنا نتخيلها.</span></p>
+    <p><span dir="rtl">تخيل عندنا تانك مياه فوق سطح البيت.</span></p>
+    <p><span dir="rtl">الميه بتنزل في المواسير بسبب فرق الارتفاع.</span></p>
+    <p><span dir="rtl">الكهربا بتعمل نفس الفكرة تقريبًا.</span></p>
+    <p><span dir="rtl">المياه = الشحنات.</span></p>
+    <p><span dir="rtl">سريان المياه = التيار.</span></p>
+    <p><span dir="rtl">ضغط المياه = الجهد.</span></p>
+    <p><span dir="rtl">ولو المواسير ضيقة، المياه تمشي بصعوبة، وده زي
+            المقاومة.</span></p>
+    <p><span dir="rtl">المثال ده هيساعدكم في كل درس كهربا بعد
+            كده."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-التقنية-1"><strong><span dir="rtl">📘 المصطلحات
+                التقنية</span></strong></h2>
+    <h3 id="water-tank-analogy"><strong>🚰 Water Tank Analogy</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">تشبيه خزان المياه</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">هو تشبيه بنستخدمه علشان نفهم الكهرباء باستخدام حاجة
+            إحنا بنشوفها كل يوم وهي حركة المياه.</span></p>
+    <p><span dir="rtl">لأن الكهرباء نفسها مش بنشوفها، لكن بنشوف
+            تأثيرها.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لما تانك المياه يبقى مليان، المياه تنزل بقوة في
+            الحنفية.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">المهندسين أحيانًا يشرحوا دوائر الروبوتات للطلاب
+            باستخدام مثال خزان المياه لأنه أسهل من شرح الإلكترونات.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">أول جزء في التشبيه هو ضغط المياه.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="pressure-voltage"><strong>🌊 Pressure (Voltage)</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">ضغط المياه (يشبه
+            الجهد)</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">كل ما مستوى المياه يعلى، الضغط يزيد.</span></p>
+    <p><span dir="rtl">ونفس الفكرة في البطارية، كل ما الجهد أعلى، الدفع
+            أكبر.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لو عندك تانكين، واحد فوق العمارة وواحد في الدور
+            الأرضي، المياه من اللي فوق هتنزل بقوة أكبر.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">بطارية أكبر جهدًا تقدر تشغل بعض الأجهزة اللي البطارية
+            الصغيرة متعرفش تشغلها.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="flow-current"><strong>🚿 Flow (Current)</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">تدفق المياه (يشبه
+            التيار)</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">المياه اللي ماشية في المواسير تشبه الشحنات اللي ماشية
+            في السلك.</span></p>
+    <p><span dir="rtl">كل ما التدفق يزيد، التيار يزيد.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لما تفتح الحنفية على الآخر، كمية المياه اللي خارجة في
+            الثانية تزيد.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">لما الروبوت يشغل أكتر من موتور في نفس الوقت، كمية
+            التيار المطلوبة تزيد.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="valve-resistance"><strong>🚪 Valve (Resistance)</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الصمام أو الجزء الضيق
+            (يشبه
+            المقاومة)</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">لو المواسير ضاقت، المياه تمشي بصعوبة.</span></p>
+    <p><span dir="rtl">المقاومة في الدائرة تعمل نفس الفكرة، تقلل مرور التيار
+            وتحمي المكونات.</span></p>
+    <p><strong><span dir="rtl">أمثلة</span></strong></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لما تدوس بإيدك على خرطوم المياه، المياه تقل لأنها لقت
+            مكان ضيق.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">المقاومة اللي قبل الـ</span> <span dir="ltr">LED</span> <span dir="rtl">تمنع مرور تيار كبير
+            يحرقه.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="تفاعل-سريع-1"><strong><span dir="rtl">🎯 تفاعل
+                سريع</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو كبرنا قطر الماسورة... هل
+            المياه هتمشي أسهل ولا أصعب؟ وإيه الجزء اللي يشبهها في الدائرة
+            الكهربائية؟"</span></p>
+    <p><span dir="ltr"><br />
+            <br />
+            <strong>🔌 Slide 3: Circuit Components and<br />
+                Their Jobs</strong></span></p>
+    <h2 id="httpschatgpt.comsm_6a5e82d910e08191ba067555d492137e"><a
+            href="https://chatgpt.com/s/m_6a5e82d910e08191ba067555d492137e"><strong><u>https://chatgpt.com/s/m_6a5e82d910e08191ba067555d492137e</u></strong></a>
+    </h2>
+    <h2 id="speaker-notes-2"><img src="assets/media/image10.png" style="width:6.26772in;height:4.18056in" /><strong>🗣️
+            Speaker
+            Notes</strong></h2>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"><br />
+        </span><span dir="rtl">"😊 دلوقتي بعد ما عرفنا يعني إيه جهد، ويعني إيه
+            تيار، تعالوا نشوف مين بقى اللي بيشتغل جوه الدائرة الكهربائية.</span></p>
+    <p><span dir="rtl">أي دائرة كهربائية مهما كانت بسيطة أو معقدة، لازم يكون
+            فيها مجموعة مكونات، وكل مكون ليه وظيفة محددة جدًا.</span></p>
+    <p><span dir="rtl">فكروا فيها كأنها فريق كرة قدم... مينفعش كل اللاعبين
+            يبقوا حراس مرمى، صح؟</span></p>
+    <p><span dir="rtl">كل واحد ليه دور.</span></p>
+    <p><span dir="rtl">في الدائرة الكهربائية نفس الفكرة.</span></p>
+    <p><span dir="rtl">في جزء بيولد الطاقة.</span></p>
+    <p><span dir="rtl">وفي جزء بيستخدم الطاقة.</span></p>
+    <p><span dir="rtl">وفي جزء بيحمي الدائرة.</span></p>
+    <p><span dir="rtl">وفي جزء بيتحكم في تشغيلها وإيقافها.</span></p>
+    <p><span dir="rtl">ولما كل واحد يعمل شغله صح، الجهاز كله
+            يشتغل.</span></p>
+    <p><span dir="rtl">وده نفس اللي هيحصل بعد كده في الـ</span> <span dir="ltr">Embedded Systems</span><span
+            dir="rtl">.</span></p>
+    <p><span dir="rtl">هنلاقي بطارية، وسنسور، وموتور، وميكروكنترولر... وكل
+            واحد ليه وظيفة محددة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-التقنية-2"><strong><span dir="rtl">📘 المصطلحات
+                التقنية</span></strong></h2>
+    <h3 id="source"><strong>🔋 Source</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">مصدر الطاقة</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">مصدر الطاقة هو الجزء اللي بيبدأ كل حاجة.</span></p>
+    <p><span dir="rtl">هو اللي يدي الدائرة الجهد الكهربائي علشان الشحنات
+            تبدأ تتحرك.</span></p>
+    <p><span dir="rtl">في أغلب المشاريع هيكون بطارية أو</span> <span dir="ltr">USB</span> <span dir="rtl">أو</span>
+        <span dir="ltr">Adapter</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">من غير مصدر طاقة... مفيش أي مكون هيشتغل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل إنك في البيت والكهرباء قطعت.</span></p>
+    <p><span dir="rtl">كل الأجهزة موجودة، لكن محدش شغال.</span></p>
+    <p><span dir="rtl">أول ما الكهرباء ترجع، كل حاجة تبدأ تشتغل.</span></p>
+    <p><span dir="rtl">يبقى الكهرباء هي مصدر الطاقة.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">روبوت صغير في مسابقة روبوتات.</span></p>
+    <p><span dir="rtl">كل البرمجة صح، وكل الأسلاك متوصلة، لكن الطالب نسي يحط
+            البطارية.</span></p>
+    <p><span dir="rtl">الروبوت مش هيتحرك خالص لأن مصدر الطاقة مش
+            موجود.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما الطاقة اتولدت... محتاجة تروح لمكون
+            يستخدمها.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="load"><strong>💡 Load</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الحمل الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الحمل هو أي مكون بيستهلك الكهرباء علشان يعمل
+            وظيفة.</span></p>
+    <p><span dir="rtl">يعني ممكن يحول الكهرباء لنور...</span></p>
+    <p><span dir="rtl">أو حركة...</span></p>
+    <p><span dir="rtl">أو صوت...</span></p>
+    <p><span dir="rtl">أو حرارة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-1"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">اللمبة في أوضة النوم.</span></p>
+    <p><span dir="rtl">الكهرباء تدخلها، وهي تحولها لضوء ينور
+            الأوضة.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">في روبوت، الموتور يعتبر حمل لأنه يحول الكهرباء إلى
+            حركة تخلي العجل يلف.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">طيب... أحيانًا الكهرباء تبقى زيادة عن المطلوب، مين
+            يحمي الدائرة؟</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="resistor"><strong>🟢 Resistor</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المقاومة</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">المقاومة زي الشرطي اللي بينظم المرور.</span></p>
+    <p><span dir="rtl">هي تقلل كمية التيار اللي ماشي في السلك علشان المكونات
+            متتحرقش.</span></p>
+    <p><span dir="rtl">في مشاريع الـ</span> <span dir="ltr">Embedded
+            Systems</span> <span dir="rtl">هتستخدموا المقاومة مع الـ</span> <span dir="ltr">LED</span> <span
+            dir="rtl">تقريبًا في كل مشروع.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-2"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل طريق سريع فيه مطب.</span></p>
+    <p><span dir="rtl">المطب هيخلي العربيات تهدي.</span></p>
+    <p><span dir="rtl">المقاومة بتعمل نفس الفكرة للكهرباء.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">طالب وصل</span> <span dir="ltr">LED</span> <span dir="rtl">مباشرة بالبطارية من غير مقاومة.</span>
+    </p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">LED</span> <span dir="rtl">نور ثانية واحدة وبعدها اتحرق لأن التيار كان
+            كبير
+            جدًا.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">طيب لو أنا عايز أشغل أو أطفي الدائرة
+            بإيدي؟</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="switch"><strong>🔘 Switch</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المفتاح الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">المفتاح وظيفته بسيطة جدًا.</span></p>
+    <p><span dir="rtl">يا إما يقفل الطريق فتعدي الكهرباء.</span></p>
+    <p><span dir="rtl">أو يفتح الطريق فتقف الكهرباء.</span></p>
+    <p><span dir="rtl">هو زي الباب.</span></p>
+    <p><span dir="rtl">الباب مفتوح... الناس تعدي.</span></p>
+    <p><span dir="rtl">الباب مقفول... محدش يعدي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-3"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لما تدوس على مفتاح النور في البيت، اللمبة بتنور أو
+            تطفي في نفس اللحظة.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">في مشروع روبوت، زر</span> <span dir="ltr">Start</span> <span dir="rtl">يعتبر</span> <span
+            dir="ltr">Switch</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">لما الطالب يضغط عليه، الروبوت يبدأ ينفذ
+            البرنامج.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="تفاعل-سريع-2"><strong><span dir="rtl">🎯 تفاعل
+                سريع</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو شلت المقاومة من الدائرة
+            وخليت البطارية متوصلة مباشرة بالـ</span> <span dir="ltr">LED</span><span dir="rtl">... تتوقعوا هيحصل إيه؟
+            وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-4-inside-the-battery-where-the-push-comes-from-httpschatgpt.comsm_6a5e891284fc819191517092a2ac7c23">
+        <strong>🔋
+            Slide 4: Inside the Battery: Where the Push Comes From<br />
+            <a
+                href="https://chatgpt.com/s/m_6a5e891284fc819191517092a2ac7c23"><u>https://chatgpt.com/s/m_6a5e891284fc819191517092a2ac7c23</u></a></strong>
+    </h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-3"><img src="assets/media/image6.png"
+            style="width:6.26772in;height:4.18056in" /><strong><br />
+            🗣️ Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"🔍 في السلايد اللي فاتت قولنا
+            إن البطارية بتدي دفع للكهرباء.</span></p>
+    <p><span dir="rtl">لكن السؤال المهم...</span></p>
+    <p><span dir="rtl">البطارية نفسها جابت الدفع ده منين؟</span></p>
+    <p><span dir="rtl">جوه البطارية بيحصل تفاعل كيميائي.</span></p>
+    <p><span dir="rtl">التفاعل ده بيخلي طرف البطارية يبقى موجب، والطرف
+            التاني يبقى سالب.</span></p>
+    <p><span dir="rtl">الفرق بينهم هو اللي بنسميه الجهد
+            الكهربائي.</span></p>
+    <p><span dir="rtl">لكن خدوا بالكم...</span></p>
+    <p><span dir="rtl">حتى لو البطارية فيها جهد، الكهرباء مش هتمشي إلا لما
+            نقفل الدائرة.</span></p>
+    <p><span dir="rtl">يعني لازم يكون فيه طريق كامل من البطارية ويرجع لها
+            تاني.</span></p>
+    <p><span dir="rtl">وده يخلينا نفهم ليه ساعات بنحط بطارية جديدة في لعبة
+            ولسه اللعبة مش شغالة...</span></p>
+    <p><span dir="rtl">لأن ممكن المفتاح مفتوح أو فيه سلك مفصول."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-التقنية-3"><strong><span dir="rtl">📘 المصطلحات
+                التقنية</span></strong></h2>
+    <h3 id="chemical-reaction"><strong>🧪 Chemical Reaction</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التفاعل الكيميائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">داخل البطارية توجد مواد كيميائية تتفاعل مع
+            بعضها.</span></p>
+    <p><span dir="rtl">هذا التفاعل هو اللي يصنع فرق الشحنة بين الطرف الموجب
+            والطرف السالب.</span></p>
+    <p><span dir="rtl">يعني البطارية مش بتخزن كهرباء فقط، لكنها بتولد فرق
+            جهد بسبب التفاعل الكيميائي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-4"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">لما تشتري بطارية جديدة للريموت، هي جاهزة للشغل لأن
+            التفاعل الكيميائي موجود بالفعل داخلها.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">الروبوت في المسابقة يشتغل لساعات، وبعدها البطارية
+            تفضى لأن المواد الكيميائية الموجودة فيها بدأت تخلص.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">والنتيجة الطبيعية للتفاعل ده هي ظهور
+            الجهد.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="voltage-1"><strong>⚡ Voltage</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الجهد الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الجهد هو فرق الطاقة بين طرفي البطارية.</span></p>
+    <p><span dir="rtl">وده هو اللي يدفع الشحنات إنها تتحرك بمجرد ما الدائرة
+            تتقفل.</span></p>
+    <p><span dir="rtl">من غير فرق جهد... الشحنات مش هتتحرك.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-5"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل إنك ماسك كرة فوق سطح البيت.</span></p>
+    <p><span dir="rtl">بمجرد ما تسيبها، هتنزل بسبب فرق الارتفاع.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">بطارية 9</span><span dir="ltr">V</span> <span dir="rtl">تعطي دفعًا أكبر من بطارية 1.5</span><span
+            dir="ltr">V</span><span dir="rtl">، لذلك بعض الدوائر تحتاج جهدًا أعلى
+            لتعمل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">➡️
+                الانتقال</span></strong></p>
+    <p><span dir="rtl">لكن الجهد وحده لا يكفي... لازم الدائرة تكون
+            مكتملة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="closed-circuit"><strong>🔄 Closed Circuit</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الدائرة الكهربائية
+            المغلقة</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الدائرة المغلقة معناها إن الكهرباء لقت طريق كامل تخرج
+            من البطارية وترجع لها مرة تانية.</span></p>
+    <p><span dir="rtl">لو فيه أي قطع في الطريق، الكهرباء هتقف
+            فورًا.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أمثلة-6"><strong><span dir="rtl">💡 أمثلة</span></strong></h3>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🏠 المثال الأول (من
+                الحياة اليومية)</span></strong></p>
+    <p><span dir="rtl">تخيل قطار بيلف في مسار دائري.</span></p>
+    <p><span dir="rtl">لو جزء من السكة اتشال، القطار هيقف ومش
+            هيكمل.</span></p>
+    <p><span dir="ltr"></span><strong><span dir="rtl">🤖 المثال الثاني
+                (تكنولوجيا أو ذكاء اصطناعي)</span></strong></p>
+    <p><span dir="rtl">في مشروع</span> <span dir="ltr">Arduino</span><span dir="rtl">، مجرد سلك واحد مفصول يخلي المشروع
+            كله ميشتغلش رغم إن البطارية
+            سليمة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="تفاعل-سريع-3"><strong><span dir="rtl">🎯 تفاعل
+                سريع</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو البطارية جديدة جدًا، لكن
+            المفتاح مفتوح... هل هيمر تيار؟ ولا لأ؟ وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="الخاتمة-والربط-بالـ-embedded-systems"><strong><span dir="rtl">🎯
+                الخاتمة والربط بالـ</span> Embedded Systems</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"✨ دلوقتي إحنا بقينا فاهمين
+            الأساسيات اللي أي مهندس</span> <span dir="ltr">Embedded</span> <span dir="rtl">لازم يعرفها.</span></p>
+    <p><span dir="rtl">عرفنا:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">البطارية بتولد فرق جهد.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">الجهد هو اللي يزق الشحنات.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">التيار هو حركة الشحنات.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">المقاومة بتنظم وتحمي.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">المفتاح يتحكم في مرور الكهرباء.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">والدائرة لازم تكون مقفولة علشان أي جهاز
+                    يشتغل.</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">ومن الحصة الجاية هنبدأ نشوف إزاي الـ</span> <span dir="ltr">Microcontroller</span> <span
+            dir="rtl">يستخدم المفاهيم دي
+            علشان يشغل</span> <span dir="ltr">LEDs</span><span dir="rtl">،
+            ويقرأ</span> <span dir="ltr">Sensors</span><span dir="rtl">، ويتحكم
+            في</span> <span dir="ltr">Motors</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يعني من هنا هنبدأ ندخل فعليًا عالم الـ</span> <span dir="ltr">Embedded Systems."<br />
+            <br />
+            <strong>📖 Slide 5</strong></span></p>
+    <h1 id="reading-a-schematic-the-fixed-steps"><strong>Reading a
+            Schematic: The Fixed Steps</strong></h1>
+    <p><a
+            href="https://chatgpt.com/s/m_6a5e8939b7f08191856d07c7564d1bdc"><u>https://chatgpt.com/s/m_6a5e8939b7f08191856d07c7564d1bdc</u></a>
+    </p>
+    <p><img src="assets/media/image1.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="speaker-notes-4"><strong>🎤 Speaker Notes</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">👨‍🏫<br />
+            "لحد دلوقتي إحنا اتعلمنا مكونات الدائرة الكهربائية، لكن لو حد إدانا رسم
+            للدائرة على ورقة، هنفهمه إزاي؟</span></p>
+    <p><span dir="rtl">الرسم ده اسمه</span> <span dir="ltr"><strong>Schematic</strong></span> <span dir="rtl">أو المخطط
+            الكهربائي.</span></p>
+    <p><span dir="rtl">وده لغة المهندسين.</span></p>
+    <p><span dir="rtl">أي مهندس في أي دولة في العالم يقدر يبص على الـ</span>
+        <span dir="ltr">Schematic</span> <span dir="rtl">ويفهم الدائرة حتى لو
+            عمره ما شافها قبل كده.</span>
+    </p>
+    <p><span dir="rtl">طيب نقرأه إزاي؟</span></p>
+    <p><span dir="rtl">دايمًا بنفس الترتيب."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="step-1-find-the-source"><strong>🟢 Step 1: Find the
+            Source</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"أول حاجة ندور على مصدر
+            الكهرباء.</span></p>
+    <p><span dir="rtl">غالبًا هيكون البطارية.</span></p>
+    <p><span dir="rtl">ونبدأ من الطرف الموجب (+).</span></p>
+    <p><span dir="rtl">ليه؟</span></p>
+    <p><span dir="rtl">لأننا بنفترض إن التيار التقليدي بيمشي من الموجب
+            للسالب."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="step-2-trace-the-loop"><strong>🟠 Step 2: Trace the
+            Loop</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد كده نمشي مع
+            السلك.</span></p>
+    <p><span dir="rtl">نتتبع كل عنصر واحد واحد.</span></p>
+    <p><span dir="rtl">بطارية...</span></p>
+    <p><span dir="rtl">مقاومة...</span></p>
+    <p><span dir="rtl">لمبة...</span></p>
+    <p><span dir="rtl">مفتاح...</span></p>
+    <p><span dir="rtl">لحد ما نرجع تاني للبطارية.</span></p>
+    <p><span dir="rtl">كأننا ماشيين في طريق وممنوع ننط أي جزء."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="step-3-check-the-switch"><strong>🔴 Step 3: Check the
+            Switch</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"قبل ما نتوقع اللي هيحصل لازم
+            نبص على المفتاح.</span></p>
+    <p><span dir="rtl">لو المفتاح مفتوح...</span></p>
+    <p><span dir="rtl">يبقى الطريق مقطوع.</span></p>
+    <p><span dir="rtl">ومفيش تيار هيعدي.</span></p>
+    <p><span dir="rtl">حتى لو البطارية جديدة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="step-4-predict"><strong>🟢 Step 4: Predict</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"آخر خطوة نسأل
+            نفسنا...</span></p>
+    <p><span dir="rtl">كل عنصر هيعمل إيه؟</span></p>
+    <p><span dir="rtl">هل اللمبة هتنور؟</span></p>
+    <p><span dir="rtl">هل الموتور هيلف؟</span></p>
+    <p><span dir="rtl">هل في تيار أصلاً؟</span></p>
+    <p><span dir="rtl">وده اللي بيعمله أي مهندس قبل ما يبدأ يبني
+            الدائرة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="takeaway"><strong>💡 Takeaway</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"افتكروا القاعدة
+            دي.</span></p>
+    <p><span dir="rtl">ابدأ من البطارية.</span></p>
+    <p><span dir="rtl">امشي مع السلك.</span></p>
+    <p><span dir="rtl">شوف المفتاح.</span></p>
+    <p><span dir="rtl">وبعدين توقع النتيجة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="المصطلحات"><strong><span dir="rtl">📚
+                المصطلحات</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="schematic"><strong>🔋 Schematic</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المخطط الكهربائي</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">المخطط الكهربائي هو رسم بسيط بيستخدم رموز بدل
+            المكونات الحقيقية علشان يوضح طريقة توصيل الدائرة.</span></p>
+    <p><span dir="rtl">المهندس مش محتاج يرسم البطارية أو اللمبة بشكلها
+            الحقيقي، لكنه يستخدم رمز معروف يفهمه أي شخص.</span></p>
+    <h3 id="المثال-الأول"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إنك رايح بيت صاحبك. بدل ما ترسم كل المباني
+            والشوارع بالتفصيل، بتفتح</span> <span dir="ltr">Google Maps</span> <span dir="rtl">وتشوف خطوط ورموز بسيطة
+            توصلك للمكان. المخطط الكهربائي بيعمل
+            نفس الفكرة.</span></p>
+    <h3 id="المثال-الثاني"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">لما مهندس إلكترونيات يصمم روبوت، بيرسم الأول
+            الـ</span> <span dir="ltr">Schematic</span> <span dir="rtl">علشان يتأكد
+            إن كل المكونات متوصلة صح قبل ما يبدأ في التركيب الحقيقي.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">دلوقتي عرفنا يعني إيه</span> <span dir="ltr">Schematic</span><span dir="rtl">، تعالوا نشوف الرموز
+            اللي
+            بيتكون منها.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="current-1"><strong>⚡ Current</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التيار الكهربي</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">هو حركة الشحنات الكهربائية داخل الدائرة.</span></p>
+    <h3 id="المثال-الأول-1"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل الأطفال بيجروا في ممر المدرسة. طالما الممر
+            مفتوح، الأطفال يقدروا يكملوا المشي. لو حد قفل الباب، الحركة كلها
+            هتقف.</span></p>
+    <h3 id="المثال-الثاني-1"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">داخل دائرة إلكترونية في لعبة أو روبوت، التيار هو اللي
+            بيوصل الطاقة للموتور أو اللمبة علشان يشتغلوا.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">علشان نقدر نمثل حركة التيار على الورق، لازم نستخدم
+            رموز قياسية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="سؤال-تفاعلي"><strong><span dir="rtl">🙋 سؤال
+                تفاعلي</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو المفتاح
+            مفتوح...</span></p>
+    <p><span dir="rtl">هل التيار يوصل لنص الدائرة ولا يقف خالص؟
+            وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-2"><strong>📖 Slide 2</strong></h1>
+    <h1 id="schematic-symbols-one-language-for-everyone"><strong>Schematic
+            Symbols: One Language for Everyone</strong></h1>
+    <h2 id="httpschatgpt.comsm_6a5e8963633c819181a8d21dcb7b5b2a"><a
+            href="https://chatgpt.com/s/m_6a5e8963633c819181a8d21dcb7b5b2a"><strong><u>https://chatgpt.com/s/m_6a5e8963633c819181a8d21dcb7b5b2a</u></strong></a>
+    </h2>
+    <p><img src="assets/media/image4.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="speaker-notes-5"><strong>🎤 Speaker Notes</strong></h2>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي فهمنا إن الـ</span>
+        <span dir="ltr">Schematic</span> <span dir="rtl">مجرد رسم.</span>
+    </p>
+    <p><span dir="rtl">لكن هل كل واحد يرسم بالطريقة اللي تعجبه؟</span></p>
+    <p><span dir="rtl">أكيد لأ.</span></p>
+    <p><span dir="rtl">في رموز عالمية.</span></p>
+    <p><span dir="rtl">أي مهندس يشوفها يعرف معناها فورًا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="remember-connections-not-layout"><strong>🟨 Remember:
+            Connections, not Layout</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"أهم حاجة في الرسم مش شكل
+            السلك.</span></p>
+    <p><span dir="rtl">ولا مكان اللمبة.</span></p>
+    <p><span dir="rtl">المهم مين متوصل بمين.</span></p>
+    <p><span dir="rtl">يعني ممكن نفس الدائرة تتترسم بألف شكل
+            مختلف...</span></p>
+    <p><span dir="rtl">لكن طالما التوصيلات نفسها، يبقى الدائرة
+            نفسها."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="symbols"><strong>🟩 Symbols</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"كل مكون ليه رمز
+            ثابت.</span></p>
+    <p><span dir="rtl">بطارية لها رمز.</span></p>
+    <p><span dir="rtl">مقاومة لها رمز.</span></p>
+    <p><span dir="rtl">مفتاح له رمز.</span></p>
+    <p><span dir="rtl">ولمبة لها رمز.</span></p>
+    <p><span dir="rtl">وده بيسهل التواصل بين المهندسين."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="straight-lines"><strong>🟦 Straight Lines</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"الخطوط المستقيمة بتمثل
+            الأسلاك.</span></p>
+    <p><span dir="rtl">ولو لقينا نقطة سوداء صغيرة...</span></p>
+    <p><span dir="rtl">يبقى السلكين متوصلين ببعض.</span></p>
+    <p><span dir="rtl">لو مفيش نقطة...</span></p>
+    <p><span dir="rtl">يبقى مجرد خطوط عدت جنب بعض."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المقارنة-الموجودة-في-الصورة"><strong><span dir="rtl">👀 المقارنة
+                الموجودة في الصورة</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"بصوا على الصورتين.</span></p>
+    <p><span dir="rtl">الشمال دائرة حقيقية والأسلاك ماشية في كل
+            اتجاه.</span></p>
+    <p><span dir="rtl">اليمين نفس الدائرة لكن مرسومة بشكل مرتب.</span></p>
+    <p><span dir="rtl">الاتنين نفس الحاجة.</span></p>
+    <p><span dir="rtl">الاختلاف بس في طريقة العرض."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="takeaway-1"><strong>💡 Takeaway</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"افتكروا...</span></p>
+    <p><span dir="rtl">الرسم مش بيقول مكان المكونات.</span></p>
+    <p><span dir="rtl">الرسم بيقول مين متوصل بمين."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="المصطلحات-1"><strong><span dir="rtl">📚
+                المصطلحات</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="symbol"><strong>🔣 Symbol</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">رمز</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">الرمز هو شكل بسيط يمثل مكونًا كهربائيًا بدل رسمه
+            الحقيقي.</span></p>
+    <h3 id="المثال-الأول-2"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">لما تشوف علامة الحمام في المول، مش محتاج يشوف صورة
+            حمام حقيقية، مجرد الرمز بيكفي علشان تفهم المكان.</span></p>
+    <h3 id="المثال-الثاني-2"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">في برامج تصميم الدوائر مثل</span> <span dir="ltr">Proteus</span> <span dir="rtl">أو</span> <span
+            dir="ltr">KiCad</span><span dir="rtl">، المهندس يختار رمز البطارية أو
+            المقاومة من المكتبة بدل رسمها بنفسه.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما عرفنا الرموز، لازم نعرف إزاي الأسلاك بتتوصّل
+            بينها.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="connection"><strong>🔌 Connection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">توصيل</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">هو الربط بين مكونين بحيث يقدر التيار ينتقل من واحد
+            للتاني.</span></p>
+    <h3 id="المثال-الأول-3"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل مجموعة أطفال ماسكين إيد بعض في سلسلة. لو واحد
+            ساب إيد التاني، السلسلة كلها هتتفك.</span></p>
+    <h3 id="المثال-الثاني-3"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">لو نسيت توصل سلك بين البطارية واللمبة في مشروع
+            إلكتروني، اللمبة مش هتشتغل مهما كانت البطارية جديدة.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما عرفنا قراءة المخططات والرموز، هنبدأ نتعلم
+            القانون اللي يخلي المهندس يحسب التيار والجهد قبل ما يبني
+            الدائرة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="سؤال-تفاعلي-1"><strong><span dir="rtl">🙋 سؤال
+                تفاعلي</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو رسمتلك نفس الدائرة بشكل
+            دائري ومرة بشكل مستطيل...</span></p>
+    <p><span dir="rtl">هل وظيفة الدائرة هتتغير؟ وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-3"><strong><br />
+            📖 Slide 3</strong></h1>
+    <h1 id="ohms-law-predicting-before-building"><strong>Ohm's Law:
+            Predicting Before Building</strong></h1>
+    <h2 id="httpschatgpt.comsm_6a5e897a1e848191b6b8c6ac7fbddaa0"><a
+            href="https://chatgpt.com/s/m_6a5e897a1e848191b6b8c6ac7fbddaa0"><strong><u>https://chatgpt.com/s/m_6a5e897a1e848191b6b8c6ac7fbddaa0</u></strong></a>
+    </h2>
+    <h2 id="speaker-notes-6"><img src="assets/media/image11.png" style="width:6.26772in;height:4.18056in" /><strong>🎤
+            Speaker
+            Notes</strong></h2>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"لحد دلوقتي عرفنا إن في 3
+            حاجات أساسية في أي دائرة كهربائية:</span></p>
+    <p>⚡ Voltage<br />
+        ⚡ Current<br />
+        ⚡ Resistance</p>
+    <p><span dir="rtl">لكن هل في علاقة بينهم؟</span></p>
+    <p><span dir="rtl">الإجابة: أيوه.</span></p>
+    <p><span dir="rtl">في قانون مشهور جدًا اسمه</span> <span dir="ltr"><strong>Ohm's Law</strong>.</span></p>
+    <p><span dir="rtl">وده يعتبر من أهم القوانين في الكهرباء والإلكترونيات،
+            وأي حد هيشتغل</span> <span dir="ltr">Embedded Systems</span> <span dir="rtl">أو</span> <span
+            dir="ltr">Robotics</span> <span dir="rtl">أو</span> <span dir="ltr">Electronics</span> <span dir="rtl">لازم
+            يكون فاهمه."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"القانون بيقول:</span></p>
+    <p><strong>V = I × R</strong></p>
+    <p><span dir="rtl">يعني:</span></p>
+    <p><span dir="rtl">الجهد = التيار × المقاومة.</span></p>
+    <p><span dir="rtl">وده معناه إن أي اتنين نعرفهم، نقدر نحسب
+            التالت."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أول-معادلة"><strong><span dir="rtl">🟦 أول
+                معادلة</span></strong></h3>
+    <p><strong>V = I × R</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو أنا عارف التيار
+            والمقاومة...</span></p>
+    <p><span dir="rtl">أقدر أحسب الجهد."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="ثاني-معادلة"><strong><span dir="rtl">🟩 ثاني
+                معادلة</span></strong></h3>
+    <p><strong>I = V ÷ R</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"ولو عارف الجهد
+            والمقاومة...</span></p>
+    <p><span dir="rtl">أقدر أعرف التيار."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="ثالث-معادلة"><strong><span dir="rtl">🟧 ثالث
+                معادلة</span></strong></h3>
+    <p><strong>R = V ÷ I</strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"ولو عارف الجهد
+            والتيار...</span></p>
+    <p><span dir="rtl">أقدر أعرف المقاومة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="شرح-المثال-الموجود-في-السلايد"><strong><span dir="rtl">📖 شرح
+                المثال الموجود في السلايد</span></strong></h2>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"خلينا نطبق على
+            المثال."</span></p>
+    <p><span dir="rtl">المعطيات:</span></p>
+    <ul>
+        <li>
+            <p>Voltage = <strong>9 V</strong></p>
+        </li>
+        <li>
+            <p>Resistance = <strong>3 Ω</strong></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">والمطلوب...</span></p>
+    <p><span dir="rtl">احسب التيار.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"بما إن المطلوب</span> <span dir="ltr">Current</span><span
+            dir="rtl">...</span></p>
+    <p><span dir="rtl">يبقى هنستخدم القانون:</span></p>
+    <p><strong>I = V ÷ R</strong></p>
+    <p><span dir="rtl">نعوض بالأرقام.</span></p>
+    <p>9 ÷ 3</p>
+    <p><span dir="rtl">يساوي</span></p>
+    <p>3"</p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"يبقى التيار يساوي</span></p>
+    <p><strong>3 Ampere</strong></p>
+    <p><span dir="rtl">بكل بساطة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"لاحظوا إننا محسبناش بطريقة
+            معقدة.</span></p>
+    <p><span dir="rtl">إحنا بس اخترنا القانون المناسب وعوضنا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="ليه-القانون-ده-مهم"><strong><span dir="rtl">💡 ليه القانون ده
+                مهم؟</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"تخيل إنك هتركب دائرة
+            إلكترونية فيها</span> <span dir="ltr">LED</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">لو التيار كبير جدًا...</span></p>
+    <p><span dir="rtl">الـ</span> <span dir="ltr">LED</span> <span dir="rtl">هيتحرق.</span></p>
+    <p><span dir="rtl">ولو صغير جدًا...</span></p>
+    <p><span dir="rtl">مش هينور.</span></p>
+    <p><span dir="rtl">علشان كده المهندس بيحسب الأول باستخدام قانون أوم قبل
+            ما يوصل أي حاجة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="takeaway-2"><strong>💡 Takeaway</strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"افتكروا القاعدة
+            الذهبية:</span></p>
+    <p><span dir="rtl">أي اتنين معروفين...</span></p>
+    <p><span dir="rtl">يطلعوا التالت."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="المصطلحات-2"><strong><span dir="rtl">📚
+                المصطلحات</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="ohms-law"><strong>⚡ Ohm's Law</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">قانون أوم</span></p>
+    <h3 id="الشرح"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">قانون أوم هو القانون اللي بيربط بين الجهد والتيار
+            والمقاومة.</span></p>
+    <p><span dir="rtl">هو بيساعدنا نتوقع سلوك الدائرة قبل ما نبنيها،
+            وبالتالي نعرف إذا كانت هتشتغل صح ولا لأ.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-4"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إن عندك خرطوم مياه. لو ضغط المياه زاد، المياه
+            هتمشي أسرع. لكن لو الخرطوم ضيق، هيقلل كمية المياه اللي بتمشي. نفس الفكرة
+            في الكهرباء، لكن بدل المياه عندنا تيار كهربائي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-4"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">مهندس بيصمم روبوت صغير. قبل ما يوصل الموتور
+            بالبطارية، بيستخدم قانون أوم علشان يتأكد إن التيار مناسب، لأن لو التيار
+            عالي ممكن الموتور أو اللوحة الإلكترونية يتلفوا.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">علشان نستخدم قانون أوم، لازم الأول نفهم الثلاث عناصر
+            اللي بيتعامل معاها: الجهد والتيار والمقاومة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="voltage-v"><strong>🔋 Voltage (V)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">الجهد الكهربائي</span>
+    </p>
+    <h3 id="الشرح-1"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">الجهد هو القوة اللي بتدفع الشحنات الكهربائية علشان
+            تتحرك داخل الدائرة.</span></p>
+    <p><span dir="rtl">كل ما الجهد يزيد، يبقى الدفع أقوى.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-5"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إنك بتزق عربية لعبة. لو زقيتها بقوة بسيطة هتمشي
+            شوية، لكن لو زقيتها بقوة أكبر هتمشي أسرع. الجهد هو "الزقة"
+            دي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-5"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">بطارية 9</span><span dir="ltr">V</span> <span dir="rtl">بتدي دفع أكبر من بطارية 1.5</span><span
+            dir="ltr">V</span><span dir="rtl">، لذلك بعض الأجهزة تحتاج بطاريات بجهد
+            أعلى علشان تشتغل.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما عرفنا مين بيدفع، نشوف مين اللي
+            بيتحرك.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="current-i"><strong>🌊 Current (I)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التيار الكهربائي</span>
+    </p>
+    <h3 id="الشرح-2"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">التيار هو كمية الشحنات الكهربائية اللي بتمشي داخل
+            السلك كل ثانية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-6"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إن مجموعة طلبة بيخرجوا من باب الفصل. كل ما عدد
+            الطلبة اللي بيعدوا في الثانية يزيد، يبقى "التدفق" أكبر.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-6"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">في روبوت بيتحرك بموتور، التيار هو اللي بيوصل الطاقة
+            للموتور علشان يلف ويحرك الروبوت.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">طيب لو في حاجة بتمنع الحركة؟ هنا ييجي دور
+            المقاومة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="resistance-r"><strong>🚧 Resistance (R)</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المقاومة
+            الكهربائية</span></p>
+    <h3 id="الشرح-3"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">المقاومة هي الجزء اللي يقلل أو يحد من مرور التيار،
+            علشان يحمي المكونات وينظم كمية الكهرباء.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-7"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إنك بتجري في ممر واسع، هتجري بسهولة. لكن لو
+            الممر ضيق جدًا، هتضطر تبطأ. المقاومة بتعمل نفس الفكرة مع
+            الكهرباء.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-7"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">في دائرة فيها</span> <span dir="ltr">LED</span><span dir="rtl">، بنضيف مقاومة قبل الـ</span>
+        <span dir="ltr">LED</span> <span dir="rtl">علشان تمنع مرور تيار كبير يحرقه.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما فهمنا الجهد والتيار والمقاومة، بقينا نقدر
+            نستخدم قانون أوم لحل أي مسألة بسيطة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="سؤال-تفاعلي-2"><strong><span dir="rtl">🙋 سؤال
+                تفاعلي</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو البطارية 12</span><span dir="ltr">V</span> <span dir="rtl">والمقاومة
+            6</span><span dir="ltr">Ω</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">مين يقدر يحسبلي التيار؟</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">(سيبوا الطلبة
+            يحاولوا)</span></p>
+    <p><span dir="rtl">الإجابة:</span></p>
+    <p><strong>I = 12 ÷ 6 = 2A</strong>."</p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="ملخص-سريع"><strong><span dir="rtl">🌳 ملخص
+                سريع</span></strong></h2>
+    <p><span dir="ltr">Ohm's Law</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">┌─────────┼─────────┐</span></p>
+    <p><span dir="ltr">│ │ │</span></p>
+    <p><span dir="ltr">Voltage Current Resistance</span></p>
+    <p><span dir="ltr"></span> <span dir="rtl">الجهد التيار
+            المقاومة</span></p>
+    <p><span dir="ltr">│ │ │</span></p>
+    <p><span dir="ltr">Push Flow Limits Flow</span></p>
+    <p><span dir="ltr"></span> <span dir="rtl">الدفع الحركة يقلل
+            التيار</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">V = I × R</span></p>
+    <p><span dir="ltr">I = V ÷ R</span></p>
+    <p>R = V ÷ I</p>
+    <p><strong>How Fast the Energy Is Delivered</strong></p>
+    <h1 id="speaker-notes-7"><strong>🎤 Speaker Notes</strong></h1>
+    <h2 id="httpschatgpt.comsm_6a5e89ecf6008191b36cfa70c9b8240c"><a
+            href="https://chatgpt.com/s/m_6a5e89ecf6008191b36cfa70c9b8240c"><strong><u>https://chatgpt.com/s/m_6a5e89ecf6008191b36cfa70c9b8240c</u></strong></a>
+    </h2>
+    <p><img src="assets/media/image7.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="slide-title"><strong>🎯 Slide Title</strong></h2>
+    <p><strong>Power: How Fast the Energy Is Delivered</strong></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="speaker-notes-egyptian-arabic"><strong>🗣️ Speaker Notes
+            (Egyptian Arabic)</strong></h2>
+    <p><span dir="ltr">👨‍🏫</span> <strong><span dir="rtl">"لحد دلوقتي عرفنا
+                إن الفولت بيدفع الشحنات، والتيار هو اللي بيمشي في السلك، والمقاومة بتقلل
+                مرور التيار.</span></strong></p>
+    <p><strong><span dir="rtl">طيب دلوقتي هييجي سؤال
+                مهم...</span></strong></p>
+    <p><strong><span dir="rtl">إحنا عرفنا الكهربا ماشية... بس ماشية بقوة قد
+                إيه؟ أو الجهاز بياخد طاقة قد إيه؟</span></strong></p>
+    <p><strong><span dir="rtl">هنا بيظهر مصطلح جديد اسمه</span> <span dir="ltr">Power</span><span
+                dir="rtl">.</span></strong></p>
+    <p><strong><span dir="rtl">تخيلوا معايا إن عندكم اتنين شواحن
+                موبايل.</span></strong></p>
+    <p><strong><span dir="rtl">الاتنين بيشحنوا نفس الموبايل... لكن واحد
+                بيشحنه في ساعة، والتاني في أربع ساعات.</span></strong></p>
+    <p><strong><span dir="rtl">الاتنين وصلوا نفس الطاقة في الآخر، لكن واحد
+                وصلها أسرع.</span></strong></p>
+    <p><strong><span dir="rtl">وده بالظبط معنى الـ</span> <span dir="ltr">Power</span><span dir="rtl">.</span></strong>
+    </p>
+    <p><strong><span dir="rtl">الـ</span> <span dir="ltr">Power</span> <span dir="rtl">مش بتقول الطاقة كام... لكنها
+                بتقول الطاقة بتتوصل بسرعة قد
+                إيه.</span></strong></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المصطلحات-3"><strong><span dir="rtl">⚡
+                المصطلحات</span></strong></h3>
+    <p><span dir="ltr"></span></p>
+    <h3 id="power-1"><strong>🔋 Power</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">القدرة الكهربائية</span>
+    </p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">القدرة الكهربائية بتقيس معدل انتقال الطاقة.<br />
+            يعني الجهاز بيستهلك أو بينقل طاقة بسرعة قد إيه في كل ثانية.</span></p>
+    <p><span dir="rtl">كل ما القدرة تزيد،<br />
+            يبقى الجهاز بينقل أو يستهلك طاقة أسرع.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الأول-من-الحياة-اليومية"><strong><span dir="rtl">🌍
+                المثال الأول (من الحياة اليومية)</span></strong></h4>
+    <p><span dir="rtl">تخيل عندك غلايتين كهربا.<br />
+            واحدة قدرتها 2000</span> <span dir="ltr">Watt</span> <span dir="rtl">والتانية 500</span> <span
+            dir="ltr">Watt</span><span dir="rtl">.<br />
+            الاتنين هيغلو المية، لكن الغلاية 2000 وات هتخلص أسرع لأنها بتنقل طاقة
+            أكبر في كل ثانية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الثاني-تكنولوجيا-وذكاء-اصطناعي"><strong><span dir="rtl">🤖 المثال الثاني (تكنولوجيا وذكاء
+                اصطناعي)</span></strong></h4>
+    <p><span dir="rtl">تخيل روبوت بينضف الأرض.<br />
+            لو الموتور قدرته أكبر، هيقدر يحرك الفرش بسرعة أكبر وينضف مساحة أكبر في
+            وقت أقل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي عرفنا يعني إيه قدرة،
+            السؤال بقى: نحسبها إزاي؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="power-equation"><strong>⚡ Power Equation</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">معادلة القدرة</span></p>
+    <p><strong><span dir="rtl">الشرح:</span></strong></p>
+    <p><span dir="rtl">لو إحنا عارفين الفولت والتيار،<br />
+            يبقى نقدر بسهولة نحسب القدرة.</span></p>
+    <p><span dir="rtl">المعادلة هي:</span></p>
+    <p><strong>P = V × I</strong></p>
+    <p><span dir="rtl">يعني:</span></p>
+    <p>Power = Voltage × Current</p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الأول-من-الحياة-اليومية-1"><strong><span dir="rtl">🌍
+                المثال الأول (من الحياة اليومية)</span></strong></h4>
+    <p><span dir="rtl">لو عندك لمبة شغالة على 12 فولت وبتسحب 2 أمبير،<br />
+            يبقى قدرتها:</span></p>
+    <p>12 × 2 = 24 Watt.</p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الثاني-تكنولوجيا-وذكاء-اصطناعي-1"><strong><span dir="rtl">🤖 المثال الثاني (تكنولوجيا وذكاء
+                اصطناعي)</span></strong></h4>
+    <p><span dir="rtl">لو روبوت بيشتغل على بطارية 9</span><span dir="ltr">V</span> <span dir="rtl">وبيسحب 2</span><span
+            dir="ltr">A</span><span dir="rtl">،<br />
+            يبقى الموتور بيستخدم:</span></p>
+    <p>18 Watt</p>
+    <p><span dir="rtl">وده يساعد المهندس يعرف البطارية هتكفي قد
+            إيه.</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">"خلونا نجرب المثال الموجود في
+            السلايد."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="مثال-السلايد"><strong><span dir="rtl">🔢 مثال
+                السلايد</span></strong></h3>
+    <p><span dir="rtl">إحنا هنا عارفين:</span></p>
+    <p>Voltage = 9 V</p>
+    <p>Current = 2 A</p>
+    <p><span dir="rtl">هنطبق المعادلة:</span></p>
+    <p><strong>P = V × I</strong></p>
+    <p><span dir="rtl">يعني</span></p>
+    <p>9 × 2</p>
+    <p>= <strong>18 Watt</strong></p>
+    <p><span dir="rtl">يبقى الدايرة دي بتنقل قدرة مقدارها</span> <span dir="ltr"></span><strong><span dir="rtl">18
+                وات</span></strong><span dir="ltr">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="تفاعل-سريع-4"><strong><span dir="rtl">💬 تفاعل
+                سريع</span></strong></h3>
+    <p><span dir="ltr">❓</span> <strong><span dir="rtl">لو غيرنا الفولت من
+                9</span><span dir="ltr">V</span> <span dir="rtl">لـ18</span><span dir="ltr">V</span><span dir="rtl">،
+                والتيار فضل 2</span><span dir="ltr">A</span><span dir="rtl">...</span></strong></p>
+    <p><strong><span dir="rtl">تفتكروا القدرة هتبقى كام؟</span></strong></p>
+    <p><span dir="ltr"></span><span dir="rtl">(استنى إجابات
+            الطلبة)</span></p>
+    <p><span dir="rtl">الإجابة:</span></p>
+    <p><strong>36 Watt</strong></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="tree-summary"><strong>🌳 Tree Summary</strong></h3>
+    <p><span dir="ltr">Electricity</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">├── Voltage (V)</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">│ القوة اللي بتزق
+            الشحنات</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Current (I)</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">│ حركة الشحنات</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Resistance (R)</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">│ تقلل مرور التيار</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">└── Power (P)</span></p>
+    <p><span dir="ltr"></span> <span dir="rtl">معدل انتقال الطاقة</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">Power Equation</span></p>
+    <p><span dir="ltr"></span></p>
+    <p>P = V × I</p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-1"><strong>📖 Slide 1</strong></h1>
+    <h1 id="series-and-parallel-the-two-ways-to-connect"><strong>Series and
+            Parallel: The Two Ways to Connect</strong></h1>
+    <h2 id="httpschatgpt.comsm_6a5e899045688191b16275dea2b69f4e"><a
+            href="https://chatgpt.com/s/m_6a5e899045688191b16275dea2b69f4e"><strong><u>https://chatgpt.com/s/m_6a5e899045688191b16275dea2b69f4e</u></strong></a>
+    </h2>
+    <p><img src="assets/media/image8.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="speaker-notes-8"><strong>🎤 Speaker Notes</strong></h2>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"لحد دلوقتي اتعلمنا إزاي
+            التيار بيمشي في الدائرة، وإزاي نحسبه باستخدام قانون أوم.</span></p>
+    <p><span dir="rtl">دلوقتي هنتعلم إن المكونات الكهربائية ممكن تتوصل
+            بطريقتين مختلفتين، وكل طريقة بتخلي الدائرة تشتغل بشكل مختلف.</span></p>
+    <p><span dir="rtl">الطريقتين دول اسمهم:</span></p>
+    <p>🔹 <strong>Series Connection<br />
+        </strong> 🔹 <strong>Parallel Connection</strong></p>
+    <p><span dir="rtl">وده من أهم الدروس في الـ</span> <span dir="ltr">Embedded Systems</span><span dir="rtl">، لأن أي
+            جهاز إلكتروني
+            تقريبًا بيستخدم واحدة من الطريقتين."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="أولا-series-connection"><strong>🔵 <span dir="rtl">أولًا</span>:
+            Series Connection</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"في التوصيل على
+            التوالي...</span></p>
+    <p><span dir="rtl">كل المكونات بتكون في طريق واحد فقط.</span></p>
+    <p><span dir="rtl">يعني التيار ملوش غير سكة واحدة يمشي فيها.</span></p>
+    <p><span dir="rtl">تخيلوا إنكم واقفين في طابور المدرسة.</span></p>
+    <p><span dir="rtl">كل واحد ورا التاني.</span></p>
+    <p><span dir="rtl">لو أول واحد وقف...</span></p>
+    <p><span dir="rtl">كل اللي وراه هيقف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"في النوع ده...</span></p>
+    <p><span dir="rtl">كل المكونات بيعدي فيها نفس التيار.</span></p>
+    <p><span dir="rtl">لكن الجهد الكهربائي بيتقسم بينهم.</span></p>
+    <p><span dir="rtl">ولو عنصر واحد باظ...</span></p>
+    <p><span dir="rtl">الدائرة كلها هتقف."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="ثانيا-parallel-connection"><strong>🟢 <span dir="rtl">ثانيًا</span>: Parallel Connection</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"أما في التوصيل على
+            التوازي...</span></p>
+    <p><span dir="rtl">كل عنصر ليه طريق خاص بيه.</span></p>
+    <p><span dir="rtl">يعني بدل شارع واحد...</span></p>
+    <p><span dir="rtl">بقى عندنا كذا شارع."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"وده معناه إن كل فرع بياخد
+            الجهد كامل.</span></p>
+    <p><span dir="rtl">ولو جهاز باظ...</span></p>
+    <p><span dir="rtl">باقي الأجهزة تفضل شغالة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"عشان كده...</span></p>
+    <p><span dir="rtl">بيوتنا كلها متوصلة</span> <span dir="ltr"><strong>Parallel</strong>.</span></p>
+    <p><span dir="rtl">تخيلوا لو كانت متوصلة</span> <span dir="ltr">Series</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">أول لمبة تتحرق...</span></p>
+    <p><span dir="rtl">البيت كله يضلم 😂."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="takeaway-3"><strong>💡 Takeaway</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"افتكروا القاعدة
+            دي:</span></p>
+    <p><span dir="ltr">Series</span> <span dir="rtl">→ طريق واحد.</span></p>
+    <p><span dir="ltr">Parallel</span> <span dir="rtl">→ أكتر من
+            طريق."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="المصطلحات-4"><strong><span dir="rtl">📚
+                المصطلحات</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="series-connection"><strong>🔗 Series Connection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التوصيل على
+            التوالي</span></p>
+    <h3 id="الشرح-4"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">هو توصيل المكونات كلها في مسار واحد فقط، لذلك نفس
+            التيار يمر في كل المكونات، وإذا انقطع المسار في أي نقطة تتوقف الدائرة
+            بالكامل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-8"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل مجموعة أطفال ماسكين إيد بعض في صف واحد. لو طفل
+            واحد ساب إيد زميله، السلسلة كلها هتتفك ومحدش هيقدر يكمل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-8"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">زمان بعض زينات الكريسماس كانت متوصلة على التوالي،
+            ولما لمبة واحدة تتحرق كانت السلسلة كلها تطفي لأن المسار
+            اتقطع.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">لو حبينا نتجنب إن عطل واحد يوقف كل النظام، هنستخدم
+            نوع تاني من التوصيل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="parallel-connection"><strong>🌿 Parallel
+            Connection</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">التوصيل على
+            التوازي</span></p>
+    <h3 id="الشرح-5"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">في التوصيل على التوازي كل جهاز له فرع مستقل، لذلك كل
+            فرع يحصل على نفس الجهد، وإذا حدث عطل في فرع واحد تستمر باقي الفروع في
+            العمل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-9"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل مدرسة فيها أكثر من باب خروج. لو باب اتقفل،
+            الطلبة يخرجوا من الأبواب التانية بدون مشكلة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-9"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">في البيت، لو لمبة الأوضة اتحرقت، التليفزيون والتكييف
+            والأنوار في باقي الغرف يفضلوا شغالين لأنهم متوصلين على
+            التوازي.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما فهمنا الفرق بين النوعين، هنشوف مقارنة سريعة
+            تجمع كل الاختلافات في مكان واحد.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="سؤال-تفاعلي-3"><strong><span dir="rtl">🙋 سؤال
+                تفاعلي</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو اللمبة في أوضتك
+            اتحرقت...</span></p>
+    <p><span dir="rtl">هل باقي البيت هيفصل؟</span></p>
+    <p><span dir="rtl">ليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="slide-2-1"><strong>📖 Slide 2</strong></h1>
+    <h1 id="putting-the-week-together"><strong>Putting the Week
+            Together</strong></h1>
+    <p><a
+            href="https://chatgpt.com/s/m_6a5e89c598b081918f3fc7d2d6d88bef"><u>https://chatgpt.com/s/m_6a5e89c598b081918f3fc7d2d6d88bef</u></a>
+    </p>
+    <p><img src="assets/media/image3.png" style="width:6.26772in;height:4.18056in" /></p>
+    <h2 id="speaker-notes-9"><strong>🎤 Speaker Notes</strong></h2>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"السلايد دي تعتبر مراجعة لكل
+            اللي اتعلمناه النهارده.</span></p>
+    <p><span dir="rtl">هنقارن بين</span> <span dir="ltr">Series</span> <span dir="rtl">و</span> <span
+            dir="ltr">Parallel</span> <span dir="rtl">مرة
+            واحدة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="paths"><strong>🟦 Paths</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"بصوا لأول صف.</span></p>
+    <p><span dir="rtl">في الـ</span> <span dir="ltr">Series</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">في طريق واحد فقط.</span></p>
+    <p><span dir="rtl">أما في الـ</span> <span dir="ltr">Parallel</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">في أكثر من طريق."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="current-2"><strong>🟩 Current</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"في الـ</span> <span dir="ltr">Series</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">نفس التيار بيمر في كل المكونات.</span></p>
+    <p><span dir="rtl">أما في الـ</span> <span dir="ltr">Parallel</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">التيار بيتوزع على الفروع."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="voltage-2"><strong>🟨 Voltage</strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"في الـ</span> <span dir="ltr">Series</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">الجهد بيتقسم بين المكونات.</span></p>
+    <p><span dir="rtl">أما في الـ</span> <span dir="ltr">Parallel</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">كل فرع بياخد الجهد كامل."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="لو-عنصر-باظ"><strong><span dir="rtl">🟥 لو عنصر
+                باظ</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"ودي أهم نقطة.</span></p>
+    <p><span dir="rtl">في الـ</span> <span dir="ltr">Series</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">الدائرة كلها تقف.</span></p>
+    <p><span dir="rtl">أما في الـ</span> <span dir="ltr">Parallel</span><span dir="rtl">...</span></p>
+    <p><span dir="rtl">الفرع اللي فيه المشكلة هو اللي يقف، والباقي يفضل
+            شغال."</span></p>
+    <p><span dir="ltr"></span></p>
+    <p>👨‍🏫</p>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي لو حد سألك:</span></p>
+    <p><span dir="rtl">ليه كهرباء البيت</span> <span dir="ltr">Parallel</span><span dir="rtl">؟</span></p>
+    <p><span dir="rtl">هتعرف تجاوب بسهولة.</span></p>
+    <p><span dir="rtl">علشان كل جهاز يشتغل لوحده، ولو جهاز حصل فيه عطل، باقي
+            الأجهزة متتأثرش."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="ملخص-الأسبوع"><strong><span dir="rtl">💡 ملخص
+                الأسبوع</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"خلونا نفتكر الرحلة اللي
+            بدأناها:</span></p>
+    <p><span dir="rtl">بدأنا نفهم يعني إيه شحنة وتيار وجهد.</span></p>
+    <p><span dir="rtl">بعدها عرفنا البطارية بتشتغل إزاي.</span></p>
+    <p><span dir="rtl">اتعلمنا المكونات الأساسية للدائرة.</span></p>
+    <p><span dir="rtl">قرأنا الـ</span> <span dir="ltr">Schematic</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">عرفنا قانون أوم.</span></p>
+    <p><span dir="rtl">وفي الآخر عرفنا طرق توصيل المكونات."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="المصطلحات-5"><strong><span dir="rtl">📚
+                المصطلحات</span></strong></h1>
+    <p><span dir="ltr"></span></p>
+    <h2 id="path"><strong>⚙️ Path</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">مسار</span></p>
+    <h3 id="الشرح-6"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">المسار هو الطريق الذي يسير فيه التيار الكهربائي داخل
+            الدائرة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-10"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل إنك رايح المدرسة. لو فيه شارع واحد فقط، كل
+            العربيات هتمشي فيه. لكن لو فيه أكثر من شارع، العربيات هتتوزع
+            بينهم.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-10"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">داخل روبوت صغير، ممكن الكهرباء يكون ليها أكثر من مسار
+            علشان تغذي الموتور والحساسات في نفس الوقت.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">بعد ما عرفنا المسار، نقدر نفهم ليه التيار والجهد
+            بيتصرفوا بشكل مختلف في كل نوع من أنواع التوصيل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="branch"><strong>🔌 Branch</strong></h2>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">فرع</span></p>
+    <h3 id="الشرح-7"><strong><span dir="rtl">الشرح</span></strong></h3>
+    <p><span dir="rtl">الفرع هو جزء مستقل من الدائرة في التوصيل على التوازي،
+            ويمكن أن يعمل حتى لو حدث عطل في فرع آخر.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-11"><strong><span dir="rtl">🌟 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل شجرة كبيرة لها عدة فروع. لو فرع اتكسر، باقي
+            الشجرة تفضل موجودة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-11"><strong><span dir="rtl">🌟 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">في لوحة تحكم ذكية، قد يكون هناك فرع لتشغيل الشاشة
+            وفرع آخر لتشغيل الحساسات، وإذا تعطل أحدهما قد يستمر الآخر في
+            العمل.</span></p>
+    <p><span dir="ltr">➡️</span> <strong><span dir="rtl">الانتقال</span></strong></p>
+    <p><span dir="rtl">وبكده بقينا نعرف الفرق الكامل بين التوصيل على التوالي
+            والتوصيل على التوازي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="سؤال-تفاعلي-4"><strong><span dir="rtl">🙋 سؤال
+                تفاعلي</span></strong></h2>
+    <p><span dir="ltr"></span><span dir="rtl">"لو أنت مهندس وبتصمم كهرباء
+            منزل...</span></p>
+    <p><span dir="rtl">هتختار</span> <span dir="ltr">Series</span> <span dir="rtl">ولا</span> <span
+            dir="ltr">Parallel</span><span dir="rtl">؟</span></p>
+    <p><span dir="rtl">وليه؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="ملخص-الأسبوع-بالكامل"><strong><span dir="rtl">🌳 ملخص الأسبوع
+                بالكامل</span></strong></h1>
+    <p><span dir="ltr">Embedded Systems</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Electricity Basics</span></p>
+    <p><span dir="ltr">│ ├── Charge</span></p>
+    <p><span dir="ltr">│ ├── Current</span></p>
+    <p><span dir="ltr">│ ├── Voltage</span></p>
+    <p><span dir="ltr">│ ├── Resistance</span></p>
+    <p><span dir="ltr">│ └── Power</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Battery</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Circuit Components</span></p>
+    <p><span dir="ltr">│ ├── Battery</span></p>
+    <p><span dir="ltr">│ ├── Lamp</span></p>
+    <p><span dir="ltr">│ ├── Resistor</span></p>
+    <p><span dir="ltr">│ └── Switch</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Reading Schematics</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Ohm's Law</span></p>
+    <p><span dir="ltr">│ ├── V = I × R</span></p>
+    <p><span dir="ltr">│ ├── I = V / R</span></p>
+    <p><span dir="ltr">│ └── R = V / I</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">└── Connections</span></p>
+    <p><span dir="ltr">├── Series</span></p>
+    <p>└── Parallel</p>
+    <p><span dir="ltr">🎉</span> <strong><span dir="rtl">وبكده تكون خلصت أول
+                جزء في رحلة الـ</span> <span dir="ltr">Embedded Systems</span><span dir="rtl">.</span></strong></p>
+    <p><span dir="rtl">وفي بداية الأسبوع القادم هيكون عند الطلبة أساس قوي
+            جدًا يخليهم يفهموا ليه أي</span> <span dir="ltr">Microcontroller</span>
+        <span dir="rtl">أو</span> <span dir="ltr">Arduino</span> <span dir="rtl">أو</span> <span
+            dir="ltr">ESP</span><span dir="rtl">32 محتاج
+            الأول يفهم الكهرباء قبل البرمجة.</span>
+    </p>
+    <h1 id="group-activity-1-goal"><strong>📌 Group Activity 1
+            (Goal)</strong></h1>
+    <h2 id="speaker-notes-10"><strong>🎤 Speaker Notes</strong></h2>
+    <p><span dir="ltr">🎯</span> <strong><span dir="rtl">"دلوقتي هنطبق
+                بإيدينا كل اللي اتعلمناه طول الأسبوع.</span></strong></p>
+    <p><span dir="rtl">إحنا مش هنكتفي إننا نعرف يعني إيه</span> <span dir="ltr">Series</span> <span dir="rtl">ويعني
+            إيه</span> <span dir="ltr">Parallel</span><span dir="rtl">، لكن هنبني الاتنين بنفسنا
+            ونقارن بينهم.</span></p>
+    <p><span dir="rtl">كل مجموعة هتستخدم برنامج</span> <span dir="ltr"><strong>PhET Circuit Construction
+                Kit</strong>.</span></p>
+    <p><span dir="rtl">هتلاقوا عندكم بطارية 12 فولت، وأربع لمبات، وأسلاك،
+            و</span><span dir="ltr">Ammeter</span> <span dir="rtl">و</span><span dir="ltr">Voltmeter</span><span
+            dir="rtl">.</span></p>
+    <p><span dir="rtl">المطلوب الأول إنكم تعملوا دائرة</span> <span dir="ltr"><strong>Series</strong></span> <span
+            dir="rtl">فيها الأربع
+            لمبات ورا بعض.</span></p>
+    <p><span dir="rtl">بعد كده هنقيس:</span></p>
+    <ul>
+        <li>
+            <p><span dir="rtl">قيمة التيار.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">والفولت على لمبة واحدة.</span></p>
+        </li>
+    </ul>
+    <p><span dir="rtl">بعدها هنفك نفس الدائرة ونبنيها</span> <span dir="ltr"><strong>Parallel</strong>.</span></p>
+    <p><span dir="rtl">ونقيس تاني.</span></p>
+    <p><span dir="rtl">في الآخر هنقارن:</span></p>
+    <p><span dir="rtl">ليه اللمبات شكلها اختلف؟</span></p>
+    <p><span dir="rtl">هل التيار هو هو؟</span></p>
+    <p><span dir="rtl">هل الفولت اتغير؟</span></p>
+    <p><span dir="rtl">الهدف مش إننا نحفظ الإجابة...<br />
+            الهدف إننا نشوف الفرق بعيننا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-6"><strong><span dir="rtl">📘
+                المصطلحات</span></strong></h2>
+    <p><span dir="ltr"></span></p>
+    <h3 id="series-circuit"><strong>🔋 Series Circuit</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">دائرة توصيل على
+            التوالي</span></p>
+    <p><strong><span dir="rtl">الشرح</span></strong></p>
+    <p><span dir="rtl">في دائرة الـ</span> <span dir="ltr">Series</span>
+        <span dir="rtl">كل المكونات موجودة في طريق واحد.<br />
+            يعني الكهرباء لازم تعدي عليهم كلهم بالترتيب.</span>
+    </p>
+    <p><span dir="rtl">لو أي جزء فصل...<br />
+            الدايرة كلها تقف.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-12"><strong><span dir="rtl">🌍 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل مجموعة أطفال واقفين في طابور واحد علشان يدخلوا
+            الفصل.<br />
+            لو أول واحد وقف فجأة...<br />
+            كل اللي وراه هيقف.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-12"><strong><span dir="rtl">🤖 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">تخيل روبوت ماشي في ممر واحد.<br />
+            لو حطيت صندوق في النص...<br />
+            الروبوت مش هيعرف يكمل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الانتقال"><strong><span dir="rtl">🔀
+                الانتقال</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"طيب لو عملنا أكتر من
+            طريق؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="parallel-circuit"><strong>⚡ Parallel Circuit</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">دائرة توصيل على
+            التوازي</span></p>
+    <p><strong><span dir="rtl">الشرح</span></strong></p>
+    <p><span dir="rtl">في التوازي كل لمبة ليها طريق خاص بيها.</span></p>
+    <p><span dir="rtl">لو لمبة باظت...<br />
+            الباقي هيشتغل عادي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-13"><strong><span dir="rtl">🌍 المثال
+                الأول</span></strong></h3>
+    <p><span dir="rtl">تخيل مدرسة فيها أربع أبواب.</span></p>
+    <p><span dir="rtl">لو باب اتقفل...<br />
+            لسه باقي الأبواب شغالة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-13"><strong><span dir="rtl">🤖 المثال
+                الثاني</span></strong></h3>
+    <p><span dir="rtl">تخيل أربع روبوتات.<br />
+            كل واحد ماشي في شارع مختلف.<br />
+            لو شارع اتقفل...<br />
+            التلاتة الباقيين هيكملوا.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الانتقال-1"><strong><span dir="rtl">🔀
+                الانتقال</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"دلوقتي عرفنا الفرق...<br />
+            يلا نبنيهم بإيدينا."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="سؤال-سريع"><strong><span dir="rtl">💬 سؤال
+                سريع</span></strong></h1>
+    <p>❓</p>
+    <p><span dir="rtl">لو لمبة اتحرقت...</span></p>
+    <p><span dir="rtl">مين هيكمل يشتغل؟</span></p>
+    <ul>
+        <li>
+            <p>Series؟</p>
+        </li>
+        <li>
+            <p>Parallel؟</p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h1 id="tree-summary-1"><strong>🌳 Tree Summary</strong></h1>
+    <p><span dir="ltr">Circuits</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">├── Series</span></p>
+    <p><span dir="ltr">│ One Path</span></p>
+    <p><span dir="ltr">│ Same Current</span></p>
+    <p><span dir="ltr">│ One failure stops all</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">└── Parallel</span></p>
+    <p><span dir="ltr">Multiple Paths</span></p>
+    <p><span dir="ltr"> Full Voltage</span> <span dir="rtl">لكل
+            فرع</span></p>
+    <p><span dir="rtl">باقي الفروع تستمر</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="group-activity-1-your-task"><strong>📌 Group Activity 1 (Your
+            Task)</strong></h1>
+    <h2 id="speaker-notes-11"><strong>🎤 Speaker Notes</strong></h2>
+    <p><span dir="ltr">🛠️</span> <strong><span dir="rtl">"دلوقتي هنشتغل خطوة
+                بخطوة.</span></strong></p>
+    <p><span dir="rtl">أول حاجة ابنوا دائرة</span> <span dir="ltr">Series</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">يعني البطارية وبعدها الأربع لمبات ورا بعض في نفس
+            المسار.</span></p>
+    <p><span dir="rtl">بعد ما تخلصوا...</span></p>
+    <p><span dir="rtl">حطوا الـ</span> <span dir="ltr">Ammeter</span> <span dir="rtl">وقيسوا قيمة التيار.</span></p>
+    <p><span dir="rtl">وبعدين استخدموا الـ</span> <span dir="ltr">Voltmeter</span> <span dir="rtl">علشان تقيسوا الفولت
+            على لمبة
+            واحدة.</span></p>
+    <p><span dir="rtl">بعد كده...</span></p>
+    <p><span dir="rtl">افصلوا الدائرة.</span></p>
+    <p><span dir="rtl">وابنوها</span> <span dir="ltr">Parallel</span><span dir="rtl">.</span></p>
+    <p><span dir="rtl">كل لمبة في فرع لوحدها.</span></p>
+    <p><span dir="rtl">وبعدين قيسوا نفس القياسات مرة تانية.</span></p>
+    <p><span dir="rtl">آخر خطوة...</span></p>
+    <p><span dir="rtl">قارنوا النتائج.</span></p>
+    <p><span dir="rtl">اسألوا نفسكم:</span></p>
+    <p><span dir="rtl">مين كانت لمباته أنور؟</span></p>
+    <p><span dir="rtl">الفولت اتوزع إزاي؟</span></p>
+    <p><span dir="rtl">التيار اتغير ولا لأ؟</span></p>
+    <p><span dir="rtl">حاولوا تفسروا السبب بنفسكم قبل ما أسألكم."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="teacher-instructions"><strong>👨‍🏫 Teacher
+            Instructions</strong></h2>
+    <h3 id="الهدف"><strong><span dir="rtl">🎯 الهدف</span></strong></h3>
+    <p><span dir="rtl">أن يلاحظ الطلاب عمليًا الفرق بين</span> <span dir="ltr">Series</span> <span
+            dir="rtl">و</span><span dir="ltr">Parallel</span><span dir="rtl">.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="دور-المعلم"><strong><span dir="rtl">👨‍🏫 دور
+                المعلم</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="rtl">يتأكد إن كل مجموعة بنت الـ</span> <span dir="ltr">Series</span> <span
+                    dir="rtl">صح.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يراجع القياسات.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يساعد فقط عند وجود مشكلة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">يطلب من كل مجموعة تفسير النتائج.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="دور-الطلاب"><strong><span dir="rtl">👨‍🎓 دور
+                الطلاب</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="rtl">بناء الدائرتين.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">القياس.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">المقارنة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">المناقشة.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="التقسيم"><strong><span dir="rtl">👥 التقسيم</span></strong></h3>
+    <p><span dir="rtl">مجموعات من 3–4 طلاب.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الزمن"><strong><span dir="rtl">⏱️ الزمن</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">20 دقيقة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="facilitation-tips"><strong>💡 Facilitation Tips</strong></h3>
+    <p><span dir="rtl">ابدأ بالسؤال:</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"مين متوقع إن اللمبات هتبقى
+            بنفس الإضاءة؟"</span></p>
+    <p><span dir="rtl">واسمح للطلبة يختلفوا.</span></p>
+    <p><span dir="rtl">بعدها خلوهم يكتشفوا الإجابة بنفسهم.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="student-instructions"><strong>👨‍🎓 Student
+            Instructions</strong></h1>
+    <ol type="1">
+        <li>
+            <p>Build the Series Circuit.</p>
+        </li>
+        <li>
+            <p>Measure Current.</p>
+        </li>
+        <li>
+            <p>Measure Voltage.</p>
+        </li>
+        <li>
+            <p>Build the Parallel Circuit.</p>
+        </li>
+        <li>
+            <p>Measure Again.</p>
+        </li>
+        <li>
+            <p>Compare Results.</p>
+        </li>
+        <li>
+            <p>Explain Why.</p>
+        </li>
+    </ol>
+    <p><span dir="ltr"></span></p>
+    <h1 id="model-solution"><strong>✅ Model Solution</strong></h1>
+    <table style="width:69%;">
+        <colgroup>
+            <col style="width: 23%" />
+            <col style="width: 14%" />
+            <col style="width: 30%" />
+        </colgroup>
+        <tbody>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr"><strong>Item</strong></span></td>
+                <td style="text-align: center;"><span dir="ltr"><strong>Series</strong></span></td>
+                <td style="text-align: center;"><span dir="ltr"><strong>Parallel</strong></span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Paths</span></td>
+                <td style="text-align: center;"><span dir="ltr">One</span></td>
+                <td style="text-align: center;"><span dir="ltr">Four</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Brightness</span></td>
+                <td style="text-align: center;"><span dir="ltr">Lower</span></td>
+                <td style="text-align: center;"><span dir="ltr">Higher</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Voltage on each
+                        bulb</span></td>
+                <td style="text-align: center;"><span dir="ltr">Divided</span></td>
+                <td style="text-align: center;"><span dir="ltr">Nearly Full Battery
+                        Voltage</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">If one bulb
+                        fails</span></td>
+                <td style="text-align: center;"><span dir="ltr">All stop</span></td>
+                <td style="text-align: center;"><span dir="ltr">Others
+                        continue</span></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><span dir="ltr">Observation</span></td>
+                <td style="text-align: center;"><span dir="ltr">Less Bright</span></td>
+                <td style="text-align: center;"><span dir="ltr">Brighter</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <h1 id="group-activity-2-goal"><strong>📌 Group Activity 2
+            (Goal)</strong></h1>
+    <h2 id="speaker-notes-12"><strong>🎤 Speaker Notes</strong></h2>
+    <p><span dir="ltr">🧩</span> <strong><span dir="rtl">"المرة دي هننتقل
+                لمستوى أصعب شوية.</span></strong></p>
+    <p><span dir="rtl">في النشاط الأول كنا بنقارن بين</span> <span dir="ltr">Series</span> <span dir="rtl">و</span><span
+            dir="ltr">Parallel</span> <span dir="rtl">كل واحد لوحده.</span></p>
+    <p><span dir="rtl">لكن في الحقيقة أغلب الدواير الإلكترونية الحقيقية
+            بتستخدم الاتنين مع بعض.</span></p>
+    <p><span dir="rtl">وده اسمه</span> <span dir="ltr"><strong>Combined
+                Circuit</strong></span> <span dir="rtl">أو دائرة مركبة.</span></p>
+    <p><span dir="rtl">المطلوب منكم إنكم تبنوا نفس الدائرة الموجودة في
+            الـ</span> <span dir="ltr">Schematic</span> <span dir="rtl">باستخدام
+            برنامج</span> <span dir="ltr"><strong>PhET</strong>.</span></p>
+    <p><span dir="rtl">لكن بدل أجهزة القياس</span> <span dir="ltr">A</span><span dir="rtl">1 و</span><span
+            dir="ltr">A</span><span dir="rtl">2 و</span><span dir="ltr">A</span><span dir="rtl">3 هنستخدم لمبات</span>
+        <span dir="ltr">L</span><span dir="rtl">1 و</span><span dir="ltr">L</span><span dir="rtl">2 و</span><span
+            dir="ltr">L</span><span dir="rtl">3.</span></p>
+    <p><span dir="rtl">هتلاحظوا إن جزء من الدائرة عبارة عن مسار رئيسي، وبعد
+            كده الدائرة بتتفرع لفرعين.</span></p>
+    <p><span dir="rtl">وده شبه اللي بيحصل في بيوتكم أو في أجهزة إلكترونية
+            كتير.</span></p>
+    <p><span dir="rtl">الهدف هنا مش السرعة...</span></p>
+    <p><span dir="rtl">الهدف إن كل توصيلة تكون صح، لأن أي سلك في مكان غلط
+            هيغير نتيجة الدائرة كلها."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h2 id="المصطلحات-7"><strong><span dir="rtl">📘
+                المصطلحات</span></strong></h2>
+    <p><span dir="ltr"></span></p>
+    <h3 id="combined-circuit"><strong>🔌 Combined Circuit</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">دائرة كهربائية
+            مركبة</span></p>
+    <p><strong><span dir="rtl">الشرح</span></strong></p>
+    <p><span dir="rtl">هي دائرة بتجمع بين التوصيل على التوالي والتوصيل على
+            التوازي في نفس الوقت.</span></p>
+    <p><span dir="rtl">وده النوع الأكثر استخدامًا في الأجهزة
+            الحقيقية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الأول-من-الحياة-اليومية-2"><strong><span dir="rtl">🌍
+                المثال الأول (من الحياة اليومية)</span></strong></h3>
+    <p><span dir="rtl">تخيل طريق رئيسي في مدينة، وبعده يتفرع لشوارع جانبية
+            توصل لأماكن مختلفة.</span></p>
+    <p><span dir="rtl">في البداية كل العربيات ماشية في نفس الطريق، وبعدها كل
+            واحدة تدخل شارع مختلف.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="المثال-الثاني-تكنولوجيا"><strong><span dir="rtl">🤖 المثال
+                الثاني (تكنولوجيا)</span></strong></h3>
+    <p><span dir="rtl">تخيل داخل جهاز كمبيوتر.</span></p>
+    <p><span dir="rtl">الكهرباء تخرج من مصدر واحد، ثم تتوزع لتغذي الشاشة،
+            والمعالج، والمراوح في مسارات مختلفة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الانتقال-2"><strong><span dir="rtl">🔀
+                الانتقال</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"طيب علشان نبنيها صح، لازم
+            نمشي بالترتيب."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="main-line"><strong>⚡ Main Line</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">المسار الرئيسي</span></p>
+    <p><strong><span dir="rtl">الشرح</span></strong></p>
+    <p><span dir="rtl">هو أول جزء في الدائرة، وكل التيار بيمر فيه قبل ما
+            يبدأ يتفرع.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الأول-14"><strong><span dir="rtl">🌍 المثال
+                الأول</span></strong></h4>
+    <p><span dir="rtl">زي الطريق الرئيسي اللي كل العربيات لازم تعدي منه قبل
+            ما تدخل الشوارع الجانبية.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الثاني-14"><strong><span dir="rtl">🤖 المثال
+                الثاني</span></strong></h4>
+    <p><span dir="rtl">زي كابل الكهرباء الرئيسي اللي خارج من مزود الطاقة
+            داخل الكمبيوتر.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الانتقال-3"><strong><span dir="rtl">🔀
+                الانتقال</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">"بعد المسار الرئيسي، الدائرة
+            هتبدأ تتفرع."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="branch-1"><strong>🌿 Branch</strong></h3>
+    <p><strong><span dir="rtl">الترجمة:</span></strong><span dir="ltr"></span> <span dir="rtl">فرع</span></p>
+    <p><strong><span dir="rtl">الشرح</span></strong></p>
+    <p><span dir="rtl">هو طريق مستقل داخل الدائرة يسمح بمرور التيار في مسار
+            مختلف.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الأول-15"><strong><span dir="rtl">🌍 المثال
+                الأول</span></strong></h4>
+    <p><span dir="rtl">تخيل مول كبير فيه أكتر من مدخل للمحلات.</span></p>
+    <p><span dir="rtl">كل شخص يختار الطريق اللي يناسبه.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h4 id="المثال-الثاني-15"><strong><span dir="rtl">🤖 المثال
+                الثاني</span></strong></h4>
+    <p><span dir="rtl">في شبكة إنارة ذكية، كل غرفة تعتبر فرع
+            مستقل.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="تفاعل-سريع-5"><strong><span dir="rtl">💬 تفاعل
+                سريع</span></strong></h1>
+    <p>❓</p>
+    <p><span dir="rtl">لو نسيت أوصل سلك واحد في أحد الفروع...</span></p>
+    <p><span dir="rtl">هل هتشتغل الدائرة زي ما هي؟</span></p>
+    <p><span dir="rtl">ولا هيظهر عندنا مشكلة؟</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="group-activity-2-build-order"><strong>📌 Group Activity 2 (Build
+            Order)</strong></h1>
+    <h2 id="speaker-notes-13"><strong>🎤 Speaker Notes</strong></h2>
+    <p><span dir="ltr">🛠️</span> <strong><span dir="rtl">"علشان منتلخبطش،
+                هنبني الدائرة خطوة بخطوة.</span></strong></p>
+    <p><span dir="rtl">أول خطوة...</span></p>
+    <p><span dir="rtl">هنبني المسار الرئيسي.</span></p>
+    <p><span dir="rtl">يعني البطارية، وبعدها</span> <span dir="ltr">L</span><span dir="rtl">1، وبعدها</span> <span
+            dir="ltr">R</span><span dir="rtl">1، وبعدها</span> <span dir="ltr">R</span><span dir="rtl">2.</span></p>
+    <p><span dir="rtl">لحد هنا مفيش أي تفرعات.</span></p>
+    <p><span dir="rtl">بعد كده...</span></p>
+    <p><span dir="rtl">هنضيف أول فرع.</span></p>
+    <p><span dir="rtl">هيكون فيه</span> <span dir="ltr">L</span><span dir="rtl">2 مع</span> <span
+            dir="ltr">R</span><span dir="rtl">3.</span></p>
+    <p><span dir="rtl">وبعدين الفرع التاني.</span></p>
+    <p><span dir="rtl">هيكون فيه</span> <span dir="ltr">R</span><span dir="rtl">4 مع</span> <span
+            dir="ltr">L</span><span dir="rtl">3.</span></p>
+    <p><span dir="rtl">وفي الآخر نتأكد إن كل الأسلاك متوصلة كويس وإن الدايرة
+            مقفولة.</span></p>
+    <p><span dir="rtl">افتكروا...</span></p>
+    <p><span dir="rtl">في الدواير الكهربائية، ترتيب التوصيل مهم
+            جدًا.</span></p>
+    <p><span dir="rtl">أي سلك في مكان غلط ممكن يخلي النتيجة كلها
+            مختلفة."</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="teacher-instructions-1"><strong>👨‍🏫 Teacher
+            Instructions</strong></h1>
+    <h3 id="الهدف-1"><strong><span dir="rtl">🎯 الهدف</span></strong></h3>
+    <p><span dir="rtl">يتعلم الطلاب كيفية بناء دائرة مركبة من مخطط
+            كهربائي.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="دور-المعلم-1"><strong><span dir="rtl">👨‍🏫 دور
+                المعلم</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="rtl">مراجعة كل خطوة قبل الانتقال للخطوة
+                    التالية.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">التأكد من اتجاه التوصيلات.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">مساعدة الطلاب في قراءة الـ</span> <span dir="ltr">Schematic</span> <span dir="rtl">وليس
+                    إعطاؤهم الحل
+                    مباشرة.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="دور-الطلاب-1"><strong><span dir="rtl">👨‍🎓 دور
+                الطلاب</span></strong></h3>
+    <ul>
+        <li>
+            <p><span dir="rtl">اتباع خطوات البناء.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">مراجعة كل توصيلة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">تشغيل الدائرة.</span></p>
+        </li>
+        <li>
+            <p><span dir="rtl">ملاحظة النتائج.</span></p>
+        </li>
+    </ul>
+    <p><span dir="ltr"></span></p>
+    <h3 id="التقسيم-1"><strong><span dir="rtl">👥
+                التقسيم</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">3–4 طلاب لكل
+            مجموعة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="الزمن-1"><strong><span dir="rtl">⏱️ الزمن</span></strong></h3>
+    <p><span dir="ltr"></span><span dir="rtl">25 دقيقة.</span></p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="facilitation-tips-1"><strong>💡 Facilitation Tips</strong></h3>
+    <p><span dir="rtl">اسأل كل مجموعة:</span></p>
+    <p><span dir="ltr"></span><span dir="rtl">"لو شيلنا فرع كامل... إيه اللي
+            هيحصل لباقي الدائرة؟"</span></p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="student-instructions-1"><strong>👨‍🎓 Student
+            Instructions</strong></h1>
+    <ol type="1">
+        <li>
+            <p>Build the Main Line.</p>
+        </li>
+        <li>
+            <p>Add Branch 1.</p>
+        </li>
+        <li>
+            <p>Add Branch 2.</p>
+        </li>
+        <li>
+            <p>Check Every Connection.</p>
+        </li>
+        <li>
+            <p>Run the Circuit.</p>
+        </li>
+        <li>
+            <p>Compare Your Result with the Schematic.</p>
+        </li>
+    </ol>
+    <p><span dir="ltr"></span></p>
+    <h1 id="model-solution-1"><strong>✅ Model Solution</strong></h1>
+    <h3 id="main-line-1"><strong>Main Line</strong></h3>
+    <p>Battery (24 V)</p>
+    <p>↓</p>
+    <p>L1</p>
+    <p>↓</p>
+    <p>R1 (110 Ω)</p>
+    <p>↓</p>
+    <p>R2 (110 Ω)</p>
+    <p>↓</p>
+    <p>Branch Point</p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="branch-1-1"><strong>Branch 1</strong></h3>
+    <p>L2</p>
+    <p>↓</p>
+    <p>R3 (180 Ω)</p>
+    <p>↓</p>
+    <p>Return</p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="branch-2"><strong>Branch 2</strong></h3>
+    <p>R4 (220 Ω)</p>
+    <p>↓</p>
+    <p>L3</p>
+    <p>↓</p>
+    <p>Return</p>
+    <p><span dir="ltr"></span></p>
+    <h3 id="expected-observations"><strong>Expected
+            Observations</strong></h3>
+    <p>✅ Main line is connected first.</p>
+    <p>✅ Two independent branches are created.</p>
+    <p>✅ Current splits after the branch point.</p>
+    <p>✅ Each branch carries part of the total current.</p>
+    <p>✅ If one branch is disconnected, the remaining branch can still
+        operate (depending on the exact connection shown in the schematic).</p>
+    <p><span dir="ltr"></span></p>
+    <h1 id="tree-summary-2"><strong>🌳 Tree Summary</strong></h1>
+    <p><span dir="ltr">Battery (24 V)</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">Main Line</span></p>
+    <p><span dir="ltr"></span></p>
+    <p><span dir="ltr">├── L1</span></p>
+    <p><span dir="ltr">├── R1</span></p>
+    <p><span dir="ltr">├── R2</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">├── Branch 1</span></p>
+    <p><span dir="ltr">│ ├── L2</span></p>
+    <p><span dir="ltr">│ └── R3</span></p>
+    <p><span dir="ltr">│</span></p>
+    <p><span dir="ltr">└── Branch 2</span></p>
+    <p><span dir="ltr">├── R4</span></p>
+    <p>└── L3</p>
+    <p><span dir="ltr"></span></p>
+
+</body>
+
+</html>
