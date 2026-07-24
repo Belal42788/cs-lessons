@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+<!-- 
+to use pandoc
+pandoc level2-week.docx --extract-media=assets -o level2-week.html
+
+and in css file created
+<html lang="ar" dir="rtl">
+    <head>
+    <style>
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: Cairo, Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+</style>
+-->
 
 <head>
     <meta charset="UTF-8">
@@ -106,6 +124,19 @@
             font-weight: 800;
             margin-left: 8px;
         }
+
+        .lesson-card-details {
+            border: none;
+            background: transparent;
+        }
+
+        .lesson-card-details>summary {
+            list-style: none;
+        }
+
+        .lesson-card-details>summary::-webkit-details-marker {
+            display: none;
+        }
     </style>
 </head>
 
@@ -125,7 +156,20 @@
 
             <div class="level-content">
 
-
+                <details class="lesson-card-details">
+                    <summary class="lesson-card">
+                        <span class="num">١</span>
+                        الأسبوع السابع عشر: الدرس الاول في : Internet
+                    </summary>
+                    <div class="level-content">
+                        <!-- <a class="lesson-card" href="/cs-live-sessions/level-2/week-17/Level2-Week17-embedded.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                        <a class="lesson-card" href="/level-1/week-17/level1-week17.html">
+                            📝 Speaker Notes
+                        </a>
+                    </div>
+                </details>
                 <!-- أضف هنا باقي دروس المستوى الأول -->
 
             </div>
@@ -136,18 +180,98 @@
 
             <summary>📗 المستوى الثاني</summary>
 
-            <div class="level-content">
-
-                <a class="lesson-card" href="/cs-live-sessions/level-2/week-17/Level2-Week17-embedded.html"><span
-                        class="num">١</span>
-                    الأسبوع السابع عشر:
-                    مقدمة
-                    في embedded systems</a>
-                <!-- أضف هنا باقي دروس المستوى الثاني -->
-
-            </div>
-
-        </details>
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">1</span>
+                    الأسبوع الثاني عشر: الدرس الثاني في : Cybersecurity
+                </summary>
+                <div class="level-content">
+                    <!-- <a class="lesson-card" href="/level-2/week-12/week12-level2.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                    <a class="lesson-card" href="/level-2/week-12/level2-week12.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">2</span>
+                    الأسبوع الثالث عشر: الدرس الثالث في : Cybersecurity
+                </summary>
+                <div class="level-content">
+                    <!-- <a class="lesson-card" href="/level-2/week-12/week12-level2.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                    <a class="lesson-card" href="/level-2/week-13/level2-week13.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">3</span>
+                    الأسبوع الرابع عشر: الدرس الاول في : Digital Art
+                </summary>
+                <div class="level-content">
+                    <!-- <a class="lesson-card" href="/level-2/week-12/week12-level2.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                    <a class="lesson-card" href="/level-2/week-14/Level2-week14.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">4</span>
+                    الأسبوع الخامس عشر: الدرس الثاني في : Digital Art
+                </summary>
+                <div class="level-content">
+                    <!-- <a class="lesson-card" href="/level-2/week-12/week12-level2.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                    <a class="lesson-card" href="/level-2/week-15/level2-week15.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">5</span>
+                    الأسبوع السادس عشر: الدرس الثالث في : Digital Art
+                </summary>
+                <div class="level-content">
+                    <!-- <a class="lesson-card" href="/level-2/week-12/week12-level2.html">
+                            🌐 الموقع التفاعلي
+                        </a> -->
+                    <a class="lesson-card" href="/level-2/week-16/level2-week16.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+            <details class="lesson-card-details">
+                <summary class="lesson-card">
+                    <span class="num">6</span>
+                    الأسبوع السابع عشر: الدرس الاول في : Embedded Systems
+                </summary>
+                <div class="level-content">
+                    <a class="lesson-card" href="/level-2/week-17/Level2-Week17-embedded.html">
+                        🌐 الموقع التفاعلي
+                    </a>
+                    <a class="lesson-card" href="/level-2/week-17/level2-week17.html">
+                        📝 Speaker Notes
+                    </a>
+                </div>
+            </details>
+            <!-- أضف هنا باقي دروس المستوى الثاني -->
+    </div>
+    </details>
 
     </div>
 
