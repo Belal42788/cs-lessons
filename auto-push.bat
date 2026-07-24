@@ -1,15 +1,18 @@
 @echo off
-setlocal
+setlocal EnableDelayedExpansion
 
-for /r %%f in (*) do (
-    git ls-files --error-unmatch "%%f" >nul 2>&1
-    if errorlevel 1 (
-        echo Adding: %%f
-        git add "%%f"
-        git commit -m "Add %%~nxf"
-        git push
-    )
+for /f "delims=" %%f in ('git ls-files --others --exclude-standard') do (
+    echo.
+    echo =====================================
+    echo Adding: %%f
+
+    git add "%%f"
+
+    git commit -m "Add %%~nxf"
+
+    git push
 )
 
+echo.
 echo Finished!
 pause
